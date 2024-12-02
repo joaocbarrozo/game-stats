@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        #events-list {
+            margin-top: 20px;
+        }
+
+        .delete-btn {
+            margin-left: 10px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Gerador de eventos</h2>
+        <div class="mb-3">
+            <label for="event-link" class="form-label">Link do vídeo:</label>
+            <input type="text" id="event-link" class="form-control"
+                placeholder="Exemplo: https://www.youtube.com/watch?v=example" required>
+        </div>
+        <form id="event-form" class="form">
+
+            <div class="mb-3">
+                <label for="select-quarter" class="form-label">Quarto:</label>
+                <select id="select-quarter" name="select-quarter">
+                    <option value="Q1">Q1</option>
+                    <option value="Q2">Q2</option>
+                    <option value="Q3">Q3</option>
+                    <option value="Q4">Q4</option>
+                    <option value="OT">OT</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="select-type" class="form-label">Tipo:</label>
+                <select id="select-type" name="select-quarter">
+                    <option value="FGA">FGA</option>
+                    <option value="FGM">FGM</option>
+                    <option value="3PA">3PA</option>
+                    <option value="3PM">3PM</option>
+                    <option value="LL">LL</option>
+                    <option value="ROF">ROF</option>
+                    <option value="RDF">RDF</option>
+                    <option value="AST">AST</option>
+                    <option value="STL">STL</option>
+                    <option value="TO">TO</option>
+                    <option value="PF">PF</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="event-description" class="form-label">Descrição:</label>
+                <input type="text" id="event-description" class="form-control" placeholder="Descrição do evento de acordo com o tipo" required>
+            </div>
+            <div class="mb-3">
+                <label for="event-time" class="form-label">Momento:</label>
+                <input type="text" id="event-time" class="form-control" placeholder="Tempo em que aconteceu o evento em minutos e segundos Exemplo 0:43" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addEvent()">Adicionar</button>
+        </form>
+
+        <ol id="events-list" class="mt-4"></ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadEvents);
+
+        function addEvent() {
+            let link = document.getElementById('event-link').value;
+            const quarter = document.getElementById('select-quarter').value;
+            const type = document.getElementById('select-type').value;
+            let description = document.getElementById('event-description').value;
+            let timeText = document.getElementById('event-time').value;
+            let time = timeText.split(":");
+            time = parseInt(time[0]) * 60 + parseInt(time[1]);
+
+
+            link = `${link}&t=${time}s`;
+            description = `${quarter}-${type}-${description}-${timeText}`;
+
+            if (link && description) {
+                const event = { link, description };
+                const li = createEventListItem(event);
+                document.getElementById('events-list').appendChild(li);
+
+                saveEventToLocalStorage(event);
+
+                // Clear the input fields after adding the event
+                document.getElementById('event-form').reset();
+            }
+        }
+
+        function createEventListItem(event) {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = event.link;
+            a.target = "_blank";
+            a.textContent = event.description;
+
+            const deleteBtn = document.createElement('i');
+            deleteBtn.classList.add('fas', 'fa-trash', 'delete-btn');
+            deleteBtn.onclick = function () {
+                this.parentElement.remove();
+                removeEventFromLocalStorage(event);
+            };
+
+            li.appendChild(a);
+            li.appendChild(deleteBtn);
+            return li;
+        }
+
+        function saveEventToLocalStorage(event) {
+            let events = JSON.parse(localStorage.getItem('events')) || [];
+            events.push(event);
+            localStorage.setItem('events', JSON.stringify(events));
+        }
+
+        function loadEvents() {
+            let events = JSON.parse(localStorage.getItem('events')) || [];
+            events.forEach(event => {
+                const li = createEventListItem(event);
+                document.getElementById('events-list').appendChild(li);
+            });
+        }
+
+        function removeEventFromLocalStorage(event) {
+            let events = JSON.parse(localStorage.getItem('events')) || [];
+            events = events.filter(e => e.link !== event.link && e.description !== event.description);
+            localStorage.setItem('events', JSON.stringify(events));
+        }
+    </script>
+
+</body>
+
+</html>
