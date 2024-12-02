@@ -1,0 +1,657 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatisicas CEntro Olimpico X São José</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="header-container">
+        <h1 id="header-text" class="text-center">Centro Olimpico X São José - Disputa 3º lugar Série Ouro</h1>
+    </div>
+    <div id="body-container" class="row">
+        <div id="stats-container" class="col m-1">
+            <h2 id="stats-header" class="text-center">Estatisicas</h2>
+            <p>Pontos: <span id="pts-stats"> 0</span></p>
+            <p>Rebotes: <span id="reb-stats">0</span></p>
+            <p>Assistências: <span id="ast-stats">0</span></p>
+            <p>Roubos: <span id="stl-stats">1</span></p>
+            <p>Tocos: <span id="blk-stats">0</span></p>
+            <p>Turnovers: <span id="to-stats">5</span></p>
+            <p>Arremessos: <span id="fgm-stats">1</span>/<span id="fga-stats">1</span></p>
+            <p>3pt: <span id="tpm-stats">0</span>/<span id="tpa-stats">0</span></p>
+            <p>Lance Livre: <span id="ftm-stats">0</span>/<span id="fta-stats">0</span></p>
+            <!--<p>+/-: <span id="plus-minus-stats">1</span></p>-->
+            <p>Eficiência: <span id="eff-stats">0</span></p>
+            <div id="buttoms-container">
+                <button id="q1-btn" class="btn btn-primary m-1">Q1</button>
+                <button id="q2-btn" class="btn btn-primary m-1">Q2</button>
+                <button id="q3-btn" class="btn btn-primary m-1">Q3</button>
+                <button id="q4-btn" class="btn btn-primary m-1">Q4</button>
+                <button id="total-btn" class="btn btn-primary m-1">Total</button>
+            </div>
+        </div>
+        <!-- events list-->
+        <div id="events-container" class="col m-1">
+            <h2 id="events-header" class="text-center">Eventos</h2>
+            <ol id="events-list">
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-LW-0:43</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=197s" target="_blank">Q1-TO-Bola
+                        roubada-3:17</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=255s" target="_blank">Q1-TO-Passe
+                        errado-4:15</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=285s" target="_blank">Q1-FGA-Bandeja
+                        bloqueada-4:45</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=315s" target="_blank">Q1-STL-Passe
+                        interceptado-5:15</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=525s" target="_blank">Q1-TO-8
+                        segundos-8:45</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=932s" target="_blank">Q1-3PA-LW-15:32</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=985s" target="_blank">Q1-TO-Passe
+                        errado-16:25</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1067s"
+                        target="_blank">Q1-FGM-Convertido-Bandeja direita-17:47</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1085s" target="_blank">Q1-TO-Bola
+                        roubada-18:05</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=100s" target="_blank">Q3-3PA-RW-1:40</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=235s" target="_blank">Q3-TO-Bola
+                        roubada-3:55</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=260s" target="_blank">Q3-TO-Pisou
+                        fora-4:20</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=440s" target="_blank">Q3-TO-Andada-7:20</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=685s" target="_blank">Q3-LL-2/2-11:25</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=925s" target="_blank">Q3-STL-Passe
+                        interceptado-15:25</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=930s" target="_blank">Q3-TO-Andada-15:30</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=972s" target="_blank">Q3-FGA-Errado-Bandeja
+                        direita livre-16:12</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1038s" target="_blank">Q3-3PA-Top key-17:18</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1215s" target="_blank">Q3-TO-Passe
+                        errado-20:15</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1233s" target="_blank">Q3-STL-Passe
+                        interceptado-20:33</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1260s" target="_blank">Q3-LL-2/2-21:00</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=55s" target="_blank">Q4-STL-Roubo-00:55</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=60s" target="_blank">Q4-FGM-Bandeja esquerda-01:00</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=155s" target="_blank">Q4-FGA-Inside-02:35</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s" target="_blank">Q4-ROF-Rebote ofensivo-02:38</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s" target="_blank">Q4-FGA-Inside-02:38</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=240s" target="_blank">Q4-FGA-Medio left corner-04:00</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=265s" target="_blank">Q4-3PA-Left wing-04:25</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=270s" target="_blank">Q4-AST-Bola de 3-04:30</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=281s" target="_blank">Q4-STL-Passe interceptado-04:41</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=307s" target="_blank">Q4-FGA-Left corner floater-05:07</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=325s" target="_blank">Q4-3PA-Right wing-05:25</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=752s" target="_blank">Q4-PF-Falta-12:32</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=810s" target="_blank">Q4-RDF-Rebote defensivo-13:30</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=845s" target="_blank">Q4-TO-Pisou fora-14:05</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=940s" target="_blank">Q4-STL-Roubo-15:40</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1005s" target="_blank">Q4-FGM-Bandeja direita-16:45</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1035s" target="_blank">Q4-FGA-Bandeja esquerda-17:15</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        // variable links to control which links to show
+        const links = document.querySelectorAll('#events-list li');
+        // stats vaiables
+        let pts = [0, 0, 0, 0]
+        let fgm = [0, 0, 0, 0];
+        let fga = [0, 0, 0, 0];
+        let tpm = [0, 0, 0, 0];
+        let tpa = [0, 0, 0, 0];
+        let rebOff = [0, 0, 0, 0];
+        let rebDef = [0, 0, 0, 0];
+        let ast = [0, 0, 0, 0];
+        let stl = [0, 0, 0, 0];
+        let blk = [0, 0, 0, 0];
+        let to = [0, 0, 0, 0];
+        let ftm = [0, 0, 0, 0];
+        let fta = [0, 0, 0, 0];
+        let eff = [0, 0, 0, 0];
+
+        // span variables to show stats
+        const ptsStats = document.getElementById('pts-stats');
+        const rebStats = document.getElementById('reb-stats');
+        const astStats = document.getElementById('ast-stats');
+        const stlStats = document.getElementById('stl-stats');
+        const blkStats = document.getElementById('blk-stats');
+        const toStats = document.getElementById('to-stats');
+        const fgmStats = document.getElementById('fgm-stats');
+        const fgaStats = document.getElementById('fga-stats');
+        const tpmStats = document.getElementById('tpm-stats');
+        const tpaStats = document.getElementById('tpa-stats');
+        const ftmStats = document.getElementById('ftm-stats');
+        const ftaStats = document.getElementById('fta-stats');
+        const effStats = document.getElementById('eff-stats');
+        
+        // calculate Q1 stats
+        links.forEach(link => {
+            const linkText = link.querySelector('a').textContent;
+            if (linkText.startsWith('Q1')) {
+                if (linkText.match('FGA')) {
+                    fga[0] += 1;
+                    eff[0] -= 1;
+                } else if (linkText.match('FGM')) {
+                    pts[0] += 2;
+                    fga[0] += 1;
+                    fgm[0] += 1;
+                    eff[0] += 2;
+                }
+                else if (linkText.match('3PM')) {
+                    pts[0] += 3;
+                    fga[0] += 1;
+                    fgm[0] += 1;
+                    tpm[0] += 1;
+                    tpa[0] += 1;
+                    eff[0] += 3;
+                } else if (linkText.match('3PA')) {
+                    fga[0] += 1;
+                    tpa[0] += 1;
+                    eff[0] -= 1;
+                } else if (linkText.match('LL-0/1')) {
+                    pts[0] += 0;
+                    ftm[0] += 0;
+                    fta[0] += 1;
+                    eff[0] -= 1;
+                } else if (linkText.match('LL-1/1')) {
+                    pts[0] += 1;
+                    ftm[0] += 1;
+                    fta[0] += 1;
+                    eff[0] += 1;
+                } else if (linkText.match('LL-0/2')) {
+                    pts[0] += 0;
+                    ftm[0] += 0;
+                    fta[0] += 2;
+                    eff[0] -= 2;
+                } else if (linkText.match('LL-1/2')) {
+                    pts[0] += 1;
+                    ftm[0] += 1;
+                    fta[0] += 2;
+                    eff[0] += 0;
+                } else if (linkText.match('LL-2/2')) {
+                    pts[0] += 2;
+                    ftm[0] += 2;
+                    fta[0] += 2;
+                    eff[0] += 2;
+                } else if (linkText.match('LL-0/3')) {
+                    pts[0] += 0;
+                    ftm[0] += 0;
+                    fta[0] += 3;
+                    eff[0] -= 3;
+                } else if (linkText.match('LL-1/3')) {
+                    pts[0] += 1;
+                    ftm[0] += 1;
+                    fta[0] += 3;
+                    eff[0] -= 1;
+                } else if (linkText.match('LL-2/3')) {
+                    pts[0] += 2;
+                    ftm[0] += 2;
+                    fta[0] += 3;
+                    eff[0] += 1;
+                } else if (linkText.match('LL-3/3')) {
+                    pts[0] += 3;
+                    ftm[0] += 3;
+                    fta[0] += 3;
+                    eff[0] += 3;
+                } else if (linkText.match('BLK')) {
+                    blk[0] += 1;
+                    eff[0] += 1;
+                } else if (linkText.match('AST')) {
+                    ast[0] += 1;
+                    eff[0] += 1;
+                } else if (linkText.match('STL')) {
+                    stl[0] += 1;
+                    eff[0] += 1;
+                } else if (linkText.match('TO')) {
+                    to[0] += 1;
+                    eff[0] -= 1;
+                } else if (linkText.match('ROF')) {
+                    rebOff[0] += 1;
+                    eff[0] += 1;
+                } else if (linkText.match('RDF')) {
+                    rebDef[0] += 1;
+                    eff[0] += 1;
+                }
+            }
+        });
+
+        // calculate Q2 stats
+        links.forEach(link => {
+            const linkText = link.querySelector('a').textContent;
+            if (linkText.startsWith('Q2')) {
+                if (linkText.match('FGA')) {
+                    fga[1] += 1;
+                    eff[1] -= 1;
+                } else if (linkText.match('FGM')) {
+                    pts[1] += 2;
+                    fga[1] += 1;
+                    fgm[1] += 1;
+                    eff[1] += 2;
+                }
+                else if (linkText.match('3PM')) {
+                    pts[1] += 3;
+                    fga[1] += 1;
+                    fgm[1] += 1;
+                    tpm[1] += 1;
+                    tpa[1] += 1;
+                    eff[1] += 3;
+                } else if (linkText.match('3PA')) {
+                    fga[1] += 1;
+                    tpa[1] += 1;
+                    eff[1] -= 1;
+                } else if (linkText.match('LL-0/1')) {
+                    pts[1] += 0;
+                    ftm[1] += 0;
+                    fta[1] += 1;
+                    eff[1] -= 1;
+                } else if (linkText.match('LL-1/1')) {
+                    pts[2] += 1;
+                    ftm[1] += 1;
+                    fta[1] += 1;
+                    eff[1] += 1;
+                } else if (linkText.match('LL-0/2')) {
+                    pts[1] += 0;
+                    ftm[1] += 0;
+                    fta[1] += 2;
+                    eff[1] -= 2;
+                } else if (linkText.match('LL-1/2')) {
+                    pts[1] += 1;
+                    ftm[1] += 1;
+                    fta[1] += 2;
+                    eff[1] += 0;
+                } else if (linkText.match('LL-2/2')) {
+                    pts[1] += 2;
+                    ftm[1] += 2;
+                    fta[1] += 2;
+                    eff[1] += 2;
+                } else if (linkText.match('LL-0/3')) {
+                    pts[1] += 0;
+                    ftm[1] += 0;
+                    fta[1] += 3;
+                    eff[1] -= 3;
+                } else if (linkText.match('LL-1/3')) {
+                    pts[1] += 1;
+                    ftm[1] += 1;
+                    fta[1] += 3;
+                    eff[1] -= 1;
+                } else if (linkText.match('LL-2/3')) {
+                    pts[1] += 2;
+                    ftm[1] += 2;
+                    fta[1] += 3;
+                    eff[1] += 1;
+                } else if (linkText.match('LL-3/3')) {
+                    pts[1] += 3;
+                    ftm[1] += 3;
+                    fta[1] += 3;
+                    eff[1] += 3;
+                } else if (linkText.match('BLK')) {
+                    blk[1] += 1;
+                    eff[1] += 1;
+                } else if (linkText.match('AST')) {
+                    ast[1] += 1;
+                    eff[1] += 1;
+                } else if (linkText.match('STL')) {
+                    stl[1] += 1;
+                    eff[1] += 1;
+                } else if (linkText.match('TO')) {
+                    to[1] += 1;
+                    eff[1] -= 1;
+                } else if (linkText.match('ROF')) {
+                    rebOff[1] += 1;
+                    eff[1] += 1;
+                } else if (linkText.match('RDF')) {
+                    rebDef[1] += 1;
+                    eff[1] += 1;
+                }
+            }
+        });
+
+        // calculate Q3 stats
+        links.forEach(link => {
+            const linkText = link.querySelector('a').textContent;
+            if (linkText.startsWith('Q3')) {
+                if (linkText.match('FGA')) {
+                    fga[2] += 1;
+                    eff[2] -= 1;
+                } else if (linkText.match('FGM')) {
+                    pts[2] += 2;
+                    fga[2] += 1;
+                    fgm[2] += 1;
+                    eff[2] += 2;
+                }
+                else if (linkText.match('3PM')) {
+                    pts[2] += 3;
+                    fga[2] += 1;
+                    fgm[2] += 1;
+                    tpm[2] += 1;
+                    tpa[2] += 1;
+                    eff[2] += 3;
+                } else if (linkText.match('3PA')) {
+                    fga[2] += 1;
+                    tpa[2] += 1;
+                    eff[2] -= 1;
+                } else if (linkText.match('LL-0/1')) {
+                    pts[2] += 0;
+                    ftm[2] += 0;
+                    fta[2] += 1;
+                    eff[2] -= 1;
+                } else if (linkText.match('LL-1/1')) {
+                    pts[2] += 1;
+                    ftm[2] += 1;
+                    fta[2] += 1;
+                    eff[2] += 1;
+                } else if (linkText.match('LL-0/2')) {
+                    pts[2] += 0;
+                    ftm[2] += 0;
+                    fta[2] += 2;
+                    eff[2] -= 2;
+                } else if (linkText.match('LL-1/2')) {
+                    pts[2] += 1;
+                    ftm[2] += 1;
+                    fta[2] += 2;
+                    eff[2] += 0;
+                } else if (linkText.match('LL-2/2')) {
+                    pts[2] += 2;
+                    ftm[2] += 2;
+                    fta[2] += 2;
+                    eff[2] += 2;
+                } else if (linkText.match('LL-0/3')) {
+                    pts[2] += 0;
+                    ftm[2] += 0;
+                    fta[2] += 3;
+                    eff[2] -= 3;
+                } else if (linkText.match('LL-1/3')) {
+                    pts[2] += 1;
+                    ftm[2] += 1;
+                    fta[2] += 3;
+                    eff[2] -= 1;
+                } else if (linkText.match('LL-2/3')) {
+                    pts[2] += 2;
+                    ftm[2] += 2;
+                    fta[2] += 3;
+                    eff[2] += 1;
+                } else if (linkText.match('LL-3/3')) {
+                    pts[2] += 3;
+                    ftm[2] += 3;
+                    fta[2] += 3;
+                    eff[2] += 3;
+                } else if (linkText.match('BLK')) {
+                    blk[2] += 1;
+                    eff[2] += 1;
+                } else if (linkText.match('AST')) {
+                    ast[2] += 1;
+                    eff[2] += 1;
+                } else if (linkText.match('STL')) {
+                    stl[2] += 1;
+                    eff[2] += 1;
+                } else if (linkText.match('TO')) {
+                    to[2] += 1;
+                    eff[2] -= 1;
+                } else if (linkText.match('ROF')) {
+                    rebOff[2] += 1;
+                    eff[2] += 1;
+                } else if (linkText.match('RDF')) {
+                    rebDef[2] += 1;
+                    eff[2] += 1;
+                }
+            }
+        });
+
+         // calculate Q4 stats
+         links.forEach(link => {
+            const linkText = link.querySelector('a').textContent;
+            if (linkText.startsWith('Q4')) {
+                if (linkText.match('FGA')) {
+                    fga[3] += 1;
+                    eff[3] -= 1;
+                } else if (linkText.match('FGM')) {
+                    pts[3] += 2;
+                    fga[3] += 1;
+                    fgm[3] += 1;
+                    eff[3] += 2;
+                }
+                else if (linkText.match('3PM')) {
+                    pts[3] += 3;
+                    fga[3] += 1;
+                    fgm[3] += 1;
+                    tpm[3] += 1;
+                    tpa[3] += 1;
+                    eff[3] += 3;
+                } else if (linkText.match('3PA')) {
+                    fga[3] += 1;
+                    tpa[3] += 1;
+                    eff[3] -= 1;
+                } else if (linkText.match('LL-0/1')) {
+                    pts[3] += 0;
+                    ftm[3] += 0;
+                    fta[3] += 1;
+                    eff[3] -= 1;
+                } else if (linkText.match('LL-1/1')) {
+                    pts[3] += 1;
+                    ftm[3] += 1;
+                    fta[3] += 1;
+                    eff[3] += 1;
+                } else if (linkText.match('LL-0/2')) {
+                    pts[3] += 0;
+                    ftm[3] += 0;
+                    fta[3] += 2;
+                    eff[3] -= 2;
+                } else if (linkText.match('LL-1/2')) {
+                    pts[3] += 1;
+                    ftm[3] += 1;
+                    fta[3] += 2;
+                    eff[3] += 0;
+                } else if (linkText.match('LL-2/2')) {
+                    pts[3] += 2;
+                    ftm[3] += 2;
+                    fta[3] += 2;
+                    eff[3] += 2;
+                } else if (linkText.match('LL-0/3')) {
+                    pts[3] += 0;
+                    ftm[3] += 0;
+                    fta[3] += 3;
+                    eff[3] -= 3;
+                } else if (linkText.match('LL-1/3')) {
+                    pts[3] += 1;
+                    ftm[3] += 1;
+                    fta[3] += 3;
+                    eff[3] -= 1;
+                } else if (linkText.match('LL-2/3')) {
+                    pts[3] += 2;
+                    ftm[3] += 2;
+                    fta[3] += 3;
+                    eff[3] += 1;
+                } else if (linkText.match('LL-3/3')) {
+                    pts[3] += 3;
+                    ftm[3] += 3;
+                    fta[3] += 3;
+                    eff[3] += 3;
+                } else if (linkText.match('BLK')) {
+                    blk[3] += 1;
+                    eff[3] += 1;
+                } else if (linkText.match('AST')) {
+                    ast[3] += 1;
+                    eff[3] += 1;
+                } else if (linkText.match('STL')) {
+                    stl[3] += 1;
+                    eff[3] += 1;
+                } else if (linkText.match('TO')) {
+                    to[3] += 1;
+                    eff[3] -= 1;
+                } else if (linkText.match('ROF')) {
+                    rebOff[3] += 1;
+                    eff[3] += 1;
+                } else if (linkText.match('RDF')) {
+                    rebDef[3] += 1;
+                    eff[3] += 1;
+                }
+            }
+        });
+
+
+        console.log(eff[0])
+        document.getElementById('q1-btn').addEventListener('click', function () {
+            links.forEach(link => {
+                const linkText = link.querySelector('a').textContent;
+                if (linkText.startsWith('Q1')) {
+                    link.style.display = 'list-item';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            ptsStats.textContent = pts[0];
+            rebStats.textContent = rebDef[0] + rebOff[0];
+            astStats.textContent = ast[0];
+            stlStats.textContent = stl[0];
+            blkStats.textContent = blk[0];
+            toStats.textContent = to[0];
+            fgmStats.textContent = fgm[0];
+            fgaStats.textContent = fga[0];
+            tpmStats.textContent = tpm[0];
+            tpaStats.textContent = tpa[0];
+            ftmStats.textContent = ftm[0];
+            ftaStats.textContent = fta[0];
+            effStats.textContent = eff[0];
+
+        });
+
+        document.getElementById('q2-btn').addEventListener('click', function () {
+            links.forEach(link => {
+                const linkText = link.querySelector('a').textContent;
+                if (linkText.startsWith('Q2')) {
+                    link.style.display = 'list-item';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            ptsStats.textContent = pts[1];
+            rebStats.textContent = rebDef[1] + rebOff[1];
+            astStats.textContent = ast[1];
+            stlStats.textContent = stl[1];
+            blkStats.textContent = blk[1];
+            toStats.textContent = to[1];
+            fgmStats.textContent = fgm[1];
+            fgaStats.textContent = fga[1];
+            tpmStats.textContent = tpm[1];
+            tpaStats.textContent = tpa[1];
+            ftmStats.textContent = ftm[1];
+            ftaStats.textContent = fta[1];
+            effStats.textContent = eff[1];
+        });
+
+        document.getElementById('q3-btn').addEventListener('click', function () {
+            links.forEach(link => {
+                const linkText = link.querySelector('a').textContent;
+                if (linkText.startsWith('Q3')) {
+                    link.style.display = 'list-item';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            ptsStats.textContent = pts[2];
+            rebStats.textContent = rebDef[2] + rebOff[2];
+            astStats.textContent = ast[2];
+            stlStats.textContent = stl[2];
+            blkStats.textContent = blk[2];
+            toStats.textContent = to[2];
+            fgmStats.textContent = fgm[2];
+            fgaStats.textContent = fga[2];
+            tpmStats.textContent = tpm[2];
+            tpaStats.textContent = tpa[2];
+            ftmStats.textContent = ftm[2];
+            ftaStats.textContent = fta[2];
+            effStats.textContent = eff[2];
+        });
+
+        document.getElementById('q4-btn').addEventListener('click', function () {
+            links.forEach(link => {
+                const linkText = link.querySelector('a').textContent;
+                if (linkText.startsWith('Q4')) {
+                    link.style.display = 'list-item';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            ptsStats.textContent = pts[3];
+            rebStats.textContent = rebDef[3] + rebOff[3];
+            astStats.textContent = ast[3];
+            stlStats.textContent = stl[3];
+            blkStats.textContent = blk[3];
+            toStats.textContent = to[3];
+            fgmStats.textContent = fgm[3];
+            fgaStats.textContent = fga[3];
+            tpmStats.textContent = tpm[3];
+            tpaStats.textContent = tpa[3];
+            ftmStats.textContent = ftm[3];
+            ftaStats.textContent = fta[3];
+            effStats.textContent = eff[3];
+        });
+
+        document.getElementById('total-btn').addEventListener('click', function () {
+            links.forEach(link => {
+                link.style.display = 'list-item';
+            });
+            ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3];
+            rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3];
+            astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3];
+            stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3];
+            blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3];
+            toStats.textContent = to[0] + to[1] + to[2] + to[3];
+            fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3];
+            fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3];
+            tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3];
+            tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3];
+            ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3];
+            ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3];
+            effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3];
+        });
+
+        // initialize with the total stats
+        ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3];
+        rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3];
+        astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3];
+        stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3];
+        blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3];
+        toStats.textContent = to[0] + to[1] + to[2] + to[3];
+        fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3];
+        fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3];
+        tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3];
+        tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3];
+        ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3];
+        ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3];
+        effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3];
+
+    </script>
+</body>
+</html>
