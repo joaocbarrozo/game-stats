@@ -33,6 +33,7 @@
                 <button id="q2-btn" class="btn btn-primary m-1 shadow-sm">Q2</button>
                 <button id="q3-btn" class="btn btn-primary m-1 shadow-sm">Q3</button>
                 <button id="q4-btn" class="btn btn-primary m-1 shadow-sm">Q4</button>
+                <button id="ot-btn" class="btn btn-primary m-1 shadow-sm">OT</button>
                 <button id="total-btn" class="btn btn-primary m-1 shadow-sm">Total</button>
             </div>
         </div>
@@ -125,22 +126,23 @@
     <script>
         // variable links to control which links to show
         const links = document.querySelectorAll('#events-list li');
+        const statsHeader = document.getElementById("stats-header");
         // stats vaiables
-        let pts = [0, 0, 0, 0]
-        let fgm = [0, 0, 0, 0];
-        let fga = [0, 0, 0, 0];
-        let tpm = [0, 0, 0, 0];
-        let tpa = [0, 0, 0, 0];
-        let rebOff = [0, 0, 0, 0];
-        let rebDef = [0, 0, 0, 0];
-        let ast = [0, 0, 0, 0];
-        let stl = [0, 0, 0, 0];
-        let blk = [0, 0, 0, 0];
-        let to = [0, 0, 0, 0];
-        let ftm = [0, 0, 0, 0];
-        let fta = [0, 0, 0, 0];
-        let pf = [0, 0, 0, 0];
-        let eff = [0, 0, 0, 0];
+        let pts = [0, 0, 0, 0, 0]
+        let fgm = [0, 0, 0, 0, 0];
+        let fga = [0, 0, 0, 0, 0];
+        let tpm = [0, 0, 0, 0, 0];
+        let tpa = [0, 0, 0, 0, 0];
+        let rebOff = [0, 0, 0, 0, 0];
+        let rebDef = [0, 0, 0, 0, 0];
+        let ast = [0, 0, 0, 0, 0];
+        let stl = [0, 0, 0, 0, 0];
+        let blk = [0, 0, 0, 0, 0];
+        let to = [0, 0, 0, 0, 0];
+        let ftm = [0, 0, 0, 0, 0];
+        let fta = [0, 0, 0, 0, 0];
+        let pf = [0, 0, 0, 0, 0];
+        let eff = [0, 0, 0, 0, 0];
 
         // span variables to show stats
         const ptsStats = document.getElementById('pts-stats');
@@ -518,8 +520,99 @@
             }
         });
 
+        // calculate OT stats
+        links.forEach(link => {
+            const linkText = link.querySelector('a').textContent;
+            if (linkText.startsWith('OT')) {
+                if (linkText.match('FGA')) {
+                    fga[4] += 1;
+                    eff[4] -= 1;
+                } else if (linkText.match('FGM')) {
+                    pts[4] += 2;
+                    fga[4] += 1;
+                    fgm[4] += 1;
+                    eff[4] += 2;
+                }
+                else if (linkText.match('3PM')) {
+                    pts[4] += 3;
+                    tpm[4] += 1;
+                    tpa[4] += 1;
+                    eff[4] += 3;
+                } else if (linkText.match('3PA')) {
+                    tpa[4] += 1;
+                    eff[4] -= 1;
+                } else if (linkText.match('LL-0/1')) {
+                    pts[4] += 0;
+                    ftm[4] += 0;
+                    fta[4] += 1;
+                    eff[4] -= 1;
+                } else if (linkText.match('LL-1/1')) {
+                    pts[4] += 1;
+                    ftm[4] += 1;
+                    fta[4] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('LL-0/2')) {
+                    pts[4] += 0;
+                    ftm[4] += 0;
+                    fta[4] += 2;
+                    eff[4] -= 2;
+                } else if (linkText.match('LL-1/2')) {
+                    pts[4] += 1;
+                    ftm[4] += 1;
+                    fta[4] += 2;
+                    eff[4] += 0;
+                } else if (linkText.match('LL-2/2')) {
+                    pts[4] += 2;
+                    ftm[4] += 2;
+                    fta[4] += 2;
+                    eff[4] += 2;
+                } else if (linkText.match('LL-0/3')) {
+                    pts[4] += 0;
+                    ftm[4] += 0;
+                    fta[4] += 3;
+                    eff[4] -= 3;
+                } else if (linkText.match('LL-1/3')) {
+                    pts[4] += 1;
+                    ftm[4] += 1;
+                    fta[4] += 3;
+                    eff[4] -= 1;
+                } else if (linkText.match('LL-2/3')) {
+                    pts[4] += 2;
+                    ftm[4] += 2;
+                    fta[4] += 3;
+                    eff[4] += 1;
+                } else if (linkText.match('LL-3/3')) {
+                    pts[4] += 3;
+                    ftm[4] += 3;
+                    fta[4] += 3;
+                    eff[4] += 3;
+                } else if (linkText.match('BLK')) {
+                    blk[4] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('AST')) {
+                    ast[4] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('STL')) {
+                    stl[4] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('TO')) {
+                    to[4] += 1;
+                    eff[4] -= 1;
+                } else if (linkText.match('ROF')) {
+                    rebOff[4] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('RDF')) {
+                    rebDef[0] += 1;
+                    eff[4] += 1;
+                } else if (linkText.match('PF')) {
+                    pf[4] += 1;
+                }
+            }
+        });
+
         // functions to show stats per quarter and total
         document.getElementById('q1-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas Q1";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q1')) {
@@ -546,6 +639,7 @@
         });
 
         document.getElementById('q2-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas Q2";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q2')) {
@@ -571,6 +665,7 @@
         });
 
         document.getElementById('q3-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas Q3";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q3')) {
@@ -596,6 +691,7 @@
         });
 
         document.getElementById('q4-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas Q4";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q4')) {
@@ -620,23 +716,50 @@
             effStats.textContent = eff[3];
         });
 
+        document.getElementById('ot-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas OT";
+            links.forEach(link => {
+                const linkText = link.querySelector('a').textContent;
+                if (linkText.startsWith('OT')) {
+                    link.style.display = 'list-item';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            ptsStats.textContent = pts[4];
+            rebStats.textContent = rebDef[4] + rebOff[4];
+            astStats.textContent = ast[4];
+            stlStats.textContent = stl[4];
+            blkStats.textContent = blk[4];
+            toStats.textContent = to[4];
+            fgmStats.textContent = fgm[4];
+            fgaStats.textContent = fga[4];
+            tpmStats.textContent = tpm[4];
+            tpaStats.textContent = tpa[4];
+            ftmStats.textContent = ftm[4];
+            ftaStats.textContent = fta[4];
+            pfStats.textContent = pf[4];
+            effStats.textContent = eff[4];
+        });
+
         document.getElementById('total-btn').addEventListener('click', function () {
+            statsHeader.textContent = "Estatísticas Totais";
             links.forEach(link => {
                 link.style.display = 'list-item';
             });
-            ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3];
-            rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3];
-            astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3];
-            stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3];
-            blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3];
-            toStats.textContent = to[0] + to[1] + to[2] + to[3];
-            fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3];
-            fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3];
-            tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3];
-            tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3];
-            ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3];
-            ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3];
-            effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3];
+            ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3] + pts[4];
+            rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3] + rebDef[4] + rebOff[4];
+            astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3] + ast[4];
+            stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3] + stl[4];
+            blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3] + blk[4];
+            toStats.textContent = to[0] + to[1] + to[2] + to[3] + to[4];
+            fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3] + fgm[4];
+            fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3] + fga[4];
+            tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3] + tpm[4];
+            tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3] + tpa[4];
+            ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3] + ftm[4];
+            ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3] + fta[4];
+            effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3] + eff[4];
         });
 
         // functions to show events per stats
@@ -758,20 +881,20 @@
         });
 
         // initialize with the total stats
-        ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3];
-        rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3];
-        astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3];
-        stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3];
-        blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3];
-        toStats.textContent = to[0] + to[1] + to[2] + to[3];
-        fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3];
-        fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3];
-        tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3];
-        tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3];
-        ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3];
-        ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3];
-        pfStats.textContent = pf[0] + pf[1] + pf[2] + pf[3];
-        effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3];
+        statsHeader.textContent = "Estatísticas Totais";
+        ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3] + pts[4];
+        rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3] + rebDef[4] + rebOff[4];
+        astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3] + ast[4];
+        stlStats.textContent = stl[0] + stl[1] + stl[2] + stl[3] + stl[4];
+        blkStats.textContent = blk[0] + blk[1] + blk[2] + blk[3] + blk[4];
+        toStats.textContent = to[0] + to[1] + to[2] + to[3] + to[4];
+        fgmStats.textContent = fgm[0] + fgm[1] + fgm[2] + fgm[3] + fgm[4];
+        fgaStats.textContent = fga[0] + fga[1] + fga[2] + fga[3] + fga[4];
+        tpmStats.textContent = tpm[0] + tpm[1] + tpm[2] + tpm[3] + tpm[4];
+        tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3] + tpa[4];
+        ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3] + ftm[4];
+        ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3] + fta[4];
+        effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3] + eff[4];
 
     </script>
 </body>
