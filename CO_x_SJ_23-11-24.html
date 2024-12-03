@@ -35,8 +35,127 @@
                 <button id="q4-btn" class="btn btn-primary m-1 shadow-sm">Q4</button>
                 <button id="ot-btn" class="btn btn-primary m-1 shadow-sm">OT</button>
                 <button id="total-btn" class="btn btn-primary m-1 shadow-sm">Total</button>
+                
+            </div>
+            <div>
+                <!-- Button trigger modal performance -->
+                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal" data-bs-target="#performanceModal">
+                    Desempenho
+                </button>
+                <!-- Button trigger modal analysis -->
+                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal" data-bs-target="#analysisModal">
+                    Analise
+                </button>
             </div>
         </div>
+        
+        
+        <!-- Modal performance-->
+        <div class="modal fade" id="performanceModal" tabindex="-1" aria-labelledby="performanceModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="performanceModalLabel">Análise de desempenho</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <table id="offensive-table" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><h2>Desempenho Geral: </h2></th>
+                                <th><button id="btn-general-performance" class="btn btn-outline-success btn-lg">85</button></th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th><h3>Ofensivo: </h3></th>
+                                <th><button id="btn-ofensive-performance" class="btn btn-outline-success">80</button></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dedicação</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Segurança com a bola</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Seleção de arremessos</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Qualidade dos passes</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Infiltração</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Transição</td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th><h3>Defensivo: </h3></th>
+                                <th><button id="btn-defensive-performance" class="btn btn-outline-success">90</button></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dedicação</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Defesa na bola</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Pick and roll</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Ajuda defensiva</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Transição</td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+         <!-- Modal analysis -->
+         <div class="modal fade" id="analysisModal" tabindex="-1" aria-labelledby="analysisModalLabel" aria-hidden="true">
+            <div class="modal-dialog w-50">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="analysisModalLabel">Análise de desempenho</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/wFUlhoGekWs?autoplay=1&controls=1&start=100&end=115&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+
         <!-- events list-->
         <div id="events-container" class="col m-1 shadow-lg border">
             <h2 id="events-header" class="text-center bg-primary text-light border rounded p-1">Eventos</h2>
@@ -759,6 +878,7 @@
             tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3] + tpa[4];
             ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3] + ftm[4];
             ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3] + fta[4];
+            pfStats.textContent = pf[0] + pf[1] + pf[2] + pf[3] + pf[4];
             effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3] + eff[4];
         });
 
@@ -894,6 +1014,7 @@
         tpaStats.textContent = tpa[0] + tpa[1] + tpa[2] + tpa[3] + tpa[4];
         ftmStats.textContent = ftm[0] + ftm[1] + ftm[2] + ftm[3] + ftm[4];
         ftaStats.textContent = fta[0] + fta[1] + fta[2] + fta[3] + fta[4];
+        pfStats.textContent = pf[0] + pf[1] + pf[2] + pf[3] + pf[4];
         effStats.textContent = eff[0] + eff[1] + eff[2] + eff[3] + eff[4];
 
     </script>
