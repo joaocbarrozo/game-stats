@@ -83,8 +83,7 @@
                                     <th>
                                         <h2>Desempenho Geral: </h2>
                                     </th>
-                                    <th><button id="btn-general-performance"
-                                            class="btn btn-outline-success btn-lg">85</button></th>
+                                    <th></td> <h2><span class="badge bg-success">80</span></h2></th>
                                 </tr>
                             </thead>
                             <thead>
@@ -92,34 +91,87 @@
                                     <th>
                                         <h3>Ofensivo: </h3>
                                     </th>
-                                    <th><button id="btn-ofensive-performance"
-                                            class="btn btn-outline-success">80</button></th>
+                                    <th><h3><span class="badge bg-warning">70,83</span></h3></th>
                                 </tr>
                             </thead>
+                            <!-- ofensive table body-->
                             <tbody>
-                                <tr>
-                                    <td>Dedicação</td>
-                                    <td>50</td>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-participacao">
+                                    <td>Participação</td>
+                                    <td><h5><span class="badge bg-success">80</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-participacao" class="card card-body collapse">
+                                            Se comportou bem no ataque, não hesitou em arremessar quando estava desmarcada
+                                             mesmo após errar os arremessos anteriores, controlou bem o jogo chamando as jogadas
+                                             e arremesando em boa quantidade. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-seguranca-bola">
                                     <td>Segurança com a bola</td>
-                                    <td>70</td>
+                                    <td><h5><span class="badge bg-warning">70</span></h5></td>
                                 </tr>
                                 <tr>
-                                    <td>Seleção de arremessos</td>
-                                    <td>70</td>
+                                    <td colspan="2">
+                                        <div id="card-seguranca-bola" class="card card-body collapse">
+                                            Demonstrou bom controle de bola e segurança, não tendo muitos problemas quando estava sob pressão,
+                                            apesar do número alto de turnovers, a maioria não resultou em contra ataque ou pontos rápidos 
+                                            para o adversário.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-selecao-arremessos">
+                                    <td>Arremessos</td>
+                                    <td><h5><span class="badge bg-warning">60</span></h5></td>
                                 </tr>
                                 <tr>
-                                    <td>Qualidade dos passes</td>
-                                    <td>70</td>
+                                    <td colspan="2">
+                                        <div id="card-selecao-arremessos" class="card card-body collapse ">
+                                             A maioria dos arremessos foram livres de marcação e bem posicionados a execução foi o unico
+                                             problema muitos erros foram por muito incluindo alguns "air balls"
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-passes">
+                                    <td >Passes</td>
+                                    <td><h5><span class="badge bg-warning">65</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                            <div id="card-passes" class="card card-body collapse">
+                                                Apesar de ter dado apenas uma assistência e ter tido alguns passes interceptados, 
+                                                em alguns momentos encontrou companheiras em ótimas condições para pontuar tanto perto da cesta quanto
+                                                em bolas de fora.
+                                            </div>                                        
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-infiltracao">
                                     <td>Infiltração</td>
-                                    <td>50</td>
+                                    <td><h5><span class="badge bg-success">75</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-infiltracao" class="card card-body collapse">
+                                             Foi um jogo com poucas oportunidades de infiltração muito por causa 
+                                             da defesa "fechadinha" de São José, mas conseguiu aproveitar bem as 
+                                             oportunidade que teve principalmente em contra-ataques.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-transicao-ofensiva">
                                     <td>Transição</td>
-                                    <td>50</td>
+                                    <td><h5><span class="badge bg-success">75</span></h5></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="card-transicao-ofensiva" class="card card-body collapse">
+                                             Buscou sempre sair com velocidade nos contra-ataques, o que causou alguns turnovers,
+                                             já nas situações normais conseguiu se sair muito bem da pressão tanto por meio de passes 
+                                             como driblando gerando boas oportunidades de pontuar.
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                             <thead>
@@ -127,30 +179,73 @@
                                     <th>
                                         <h3>Defensivo: </h3>
                                     </th>
-                                    <th><button id="btn-defensive-performance"
-                                            class="btn btn-outline-success">90</button></th>
+                                    <th><h3><span class="badge bg-success">76,00</span></h3></th>
                                 </tr>
                             </thead>
+                            <!-- defensive table body-->
                             <tbody>
-                                <tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-dedicacao-defensiva">
                                     <td>Dedicação</td>
-                                    <td>50</td>
+                                    <td><h5><span class="badge bg-success">90</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-deicacao-defensiva" class="card card-body collapse">
+                                            Marcou com muito intensidade durante praticamente toda a partida,
+                                            tanto na defesa meia-quadra quanto quadra inteira.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-defesa-bola">
                                     <td>Defesa na bola</td>
-                                    <td>70</td>
+                                    <td><h5><span class="badge bg-success">95</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-defesa-bola" class="card card-body collapse">
+                                            Foi excelente enquanto estava defendendo a adversária com a bola,
+                                            colocou muita pressão sobre as adversárias inclusive forçando turnovers.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-pick">
                                     <td>Pick and roll</td>
-                                    <td>70</td>
+                                    <td><h5><span class="badge bg-danger">40</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-pick" class="card card-body collapse">
+                                            Teve muitas dificuldades em sair dos picks, comprometeu a defesa todas as vezes
+                                            que esteve nessa situação demonstarando pouca percepção defensiva e 
+                                            falha na comunicação com as companheiras na hora de realizar a troca. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-ajuda">
                                     <td>Ajuda defensiva</td>
-                                    <td>70</td>
+                                    <td><h5><span class="badge bg-warning">55</span></h5></td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+                                        <div id="card-ajuda" class="card card-body collapse">
+                                            Quando a bola não está com a sua marcadora ou na sua zona de marcação,
+                                            tem muitas dificuldades de observar a bola e a sua marcadora ao mesmo 
+                                            tempo e as vezes fica "assistindo ao jogo".
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="collapse" data-bs-target="#card-transicao-defensiva">
                                     <td>Transição</td>
-                                    <td>50</td>
+                                    <td><h5><span class="badge bg-success">100</span></h5></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="card-transicao-defensiva" class="card card-body collapse">
+                                            Fez um excelente trabalho no balanço defensivo impedindo muitos dos 
+                                            contra-ataques adversários, sendo sempre a primeira a compor a defesa 
+                                            e sempre contestando arremessos e bandejas sem cometer faltas.
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
