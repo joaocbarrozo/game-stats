@@ -17,7 +17,7 @@
     </div>
     <!-- stats container -->
     <div id="body-container" class="row p-2">
-        <div id="stats-container" class="col m-1 shadow-lg border">
+        <div id="stats-container" class="col m-1 shadow-lg border" style="max-height: 85vh; overflow-y: auto">
             <h2 id="stats-header" class="text-center bg-primary text-light border rounded p-1">Estatísticas</h2>
             <table class="table table-hover table-responsive">
                 <tbody>
@@ -122,7 +122,6 @@
                 <button id="q4-btn" class="btn btn-primary m-1 shadow-sm">Q4</button>
                 <button id="ot-btn" class="btn btn-primary m-1 shadow-sm">OT</button>
                 <button id="total-btn" class="btn btn-primary m-1 shadow-sm">ALL</button>
-
             </div>
             <div>
                 <!-- Button trigger modal performance -->
@@ -130,11 +129,6 @@
                     data-bs-target="#performanceModal">
                     DESEMPENHO
                 </button>
-                <!-- Button trigger modal analysis 
-                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
-                    data-bs-target="#analysisModal">
-                    Analise
-                </button>-->
             </div>
         </div>
 
@@ -370,33 +364,8 @@
             </div>
         </div>
 
-        <!-- Modal analysis -->
-        <div class="modal fade" id="analysisModal" tabindex="-1" aria-labelledby="analysisModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog w-50">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="analysisModalLabel">Análise de desempenho</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <button class="btn btn-outline-info" onclick="reloadVideo()"><iframe width="320" height="180"
-                                src="https://www.youtube.com/embed/wFUlhoGekWs?autoplay=1&controls=0&start=100&end=115&loop=1&rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </button>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- events list-->
-        <div id="events-container" class="col m-1 shadow-lg border max-vh-100">
+        <div id="events-container" class="col m-1 shadow-lg border" style="max-height: 85vh; overflow-y: auto">
             <h2 id="events-header" class="text-center bg-primary text-light border rounded p-1">Eventos</h2>
             <ol id="events-list" class="list-group m-4 mt-1">
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-45
