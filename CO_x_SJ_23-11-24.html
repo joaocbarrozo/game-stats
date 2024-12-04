@@ -19,28 +19,101 @@
     <div id="body-container" class="row p-2">
         <div id="stats-container" class="col-5 m-1 shadow-lg border">
             <h2 id="stats-header" class="text-center bg-primary text-light border rounded p-1">Estatísticas</h2>
-            <p><button id="btn-pts" class="btn btn-secondary rounded-pill shadow-sm"><strong>Pontos: </strong><span
-                        id="pts-stats"> 0</span></button></p>
-            <p><button id="btn-reb" class="btn btn-secondary rounded-pill shadow-sm"><strong>Rebotes: </strong><span
-                        id="reb-stats">0</span></button></p>
-            <p><button id="btn-ast" class="btn btn-secondary rounded-pill shadow-sm"><strong>Assistências:
-                    </strong><span id="ast-stats">0</span></button></p>
-            <p><button id="btn-stl" class="btn btn-secondary rounded-pill shadow-sm"><strong>Roubos: </strong><span
-                        id="stl-stats">1</span></button></p>
-            <p><button id="btn-blk" class="btn btn-secondary rounded-pill shadow-sm"><strong>Tocos: </strong><span
-                        id="blk-stats">0</span></button></p>
-            <p><button id="btn-to" class="btn btn-secondary rounded-pill shadow-sm"><strong>Turnovers: </strong><span
-                        id="to-stats">5</span></button></p>
-            <p><button id="btn-fg" class="btn btn-secondary rounded-pill shadow-sm"><strong>2 pontos: </strong><span
-                        id="fgm-stats">1</span>/<span id="fga-stats">1</span></button></p>
-            <p><button id="btn-3pt" class="btn btn-secondary rounded-pill shadow-sm"><strong>3 pontos: </strong><span
-                        id="tpm-stats">0</span>/<span id="tpa-stats">0</span></button></p>
-            <p><button id="btn-ft" class="btn btn-secondary rounded-pill shadow-sm"><strong>Lance Livre: </strong><span
-                        id="ftm-stats">0</span>/<span id="fta-stats">0</span></button></p>
-            <p><button id="btn-pf" class="btn btn-secondary rounded-pill shadow-sm"><strong>Faltas: </strong><span
-                        id="pf-stats">0</span></button></p>
-            <p><button id="btn-eff" class="btn btn-secondary rounded-pill shadow-sm"><strong>Eficiência: </strong><span
-                        id="eff-stats">0</span></button></p>
+            <table class="table table-hover">
+                <tbody>
+                    <tr id="btn-pts">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Pontos </strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="pts-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-reb">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Rebotes</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"> <span id="reb-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-ast">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong> Assistências </strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"> <span id="ast-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-stl">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Roubos</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="stl-stats">1</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-blk">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Tocos</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="blk-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-to">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Turnovers</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="to-stats">5</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-fg">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>2 pontos</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="fgm-stats">1</span>/<span
+                                    id="fga-stats">1</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-3pt">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>3 pontos</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="tpm-stats">0</span>/<span
+                                    id="tpa-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-ft">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Lance Livre</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span><span id="ftm-stats">0</span>/<span
+                                        id="fta-stats">0</span></span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-pf">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Faltas:</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="pf-stats">0</span></button>
+                        </td>
+                    </tr>
+                    <tr id="btn-eff">
+                        <td>
+                            <button class="btn btn-outline-secondary"><strong>Eficiência</strong></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-secondary"><span id="eff-stats">0</span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <!-- buttoms container-->
             <div id="buttoms-container">
                 <button id="q1-btn" class="btn btn-primary m-1 shadow-sm">Q1</button>
@@ -57,11 +130,11 @@
                     data-bs-target="#performanceModal">
                     Desempenho
                 </button>
-                <!-- Button trigger modal analysis -->
+                <!-- Button trigger modal analysis 
                 <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
                     data-bs-target="#analysisModal">
                     Analise
-                </button>
+                </button>-->
             </div>
         </div>
 
@@ -83,7 +156,10 @@
                                     <th>
                                         <h2>Desempenho Geral: </h2>
                                     </th>
-                                    <th></td> <h2><span class="badge bg-success">80</span></h2></th>
+                                    <th>
+                                        </td>
+                                        <h2><span class="badge bg-success">80</span></h2>
+                                    </th>
                                 </tr>
                             </thead>
                             <thead>
@@ -91,85 +167,108 @@
                                     <th>
                                         <h3>Ofensivo: </h3>
                                     </th>
-                                    <th><h3><span class="badge bg-warning">70,83</span></h3></th>
+                                    <th>
+                                        <h3><span class="badge bg-warning">70,83</span></h3>
+                                    </th>
                                 </tr>
                             </thead>
                             <!-- ofensive table body-->
                             <tbody>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-participacao">
                                     <td>Participação</td>
-                                    <td><h5><span class="badge bg-success">80</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">80</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-participacao" class="card card-body collapse">
-                                            Se comportou bem no ataque, não hesitou em arremessar quando estava desmarcada
-                                             mesmo após errar os arremessos anteriores, controlou bem o jogo chamando as jogadas
-                                             e arremesando em boa quantidade. 
+                                            Se comportou bem no ataque, não hesitou em arremessar quando estava
+                                            desmarcada
+                                            mesmo após errar os arremessos anteriores, controlou bem o jogo chamando as
+                                            jogadas
+                                            e arremesando em boa quantidade.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-seguranca-bola">
                                     <td>Segurança com a bola</td>
-                                    <td><h5><span class="badge bg-warning">70</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-warning">70</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-seguranca-bola" class="card card-body collapse">
-                                            Demonstrou bom controle de bola e segurança, não tendo muitos problemas quando estava sob pressão,
-                                            apesar do número alto de turnovers, a maioria não resultou em contra ataque ou pontos rápidos 
+                                            Demonstrou bom controle de bola e segurança, não tendo muitos problemas
+                                            quando estava sob pressão,
+                                            apesar do número alto de turnovers, a maioria não resultou em contra ataque
+                                            ou pontos rápidos
                                             para o adversário.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-selecao-arremessos">
                                     <td>Arremessos</td>
-                                    <td><h5><span class="badge bg-warning">60</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-warning">60</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-selecao-arremessos" class="card card-body collapse ">
-                                             A maioria dos arremessos foram livres de marcação e bem posicionados a execução foi o unico
-                                             problema muitos erros foram por muito incluindo alguns "air balls"
+                                            A maioria dos arremessos foram livres de marcação e bem posicionados a
+                                            execução foi o unico
+                                            problema muitos erros foram por muito incluindo alguns "air balls"
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-passes">
-                                    <td >Passes</td>
-                                    <td><h5><span class="badge bg-warning">65</span></h5></td>
+                                    <td>Passes</td>
+                                    <td>
+                                        <h5><span class="badge bg-warning">65</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
-                                            <div id="card-passes" class="card card-body collapse">
-                                                Apesar de ter dado apenas uma assistência e ter tido alguns passes interceptados, 
-                                                em alguns momentos encontrou companheiras em ótimas condições para pontuar tanto perto da cesta quanto
-                                                em bolas de fora.
-                                            </div>                                        
+                                        <div id="card-passes" class="card card-body collapse">
+                                            Apesar de ter dado apenas uma assistência e ter tido alguns passes
+                                            interceptados,
+                                            em alguns momentos encontrou companheiras em ótimas condições para pontuar
+                                            tanto perto da cesta quanto
+                                            em bolas de fora.
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-infiltracao">
                                     <td>Infiltração</td>
-                                    <td><h5><span class="badge bg-success">75</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">75</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-infiltracao" class="card card-body collapse">
-                                             Foi um jogo com poucas oportunidades de infiltração muito por causa 
-                                             da defesa "fechadinha" de São José, mas conseguiu aproveitar bem as 
-                                             oportunidade que teve principalmente em contra-ataques.
+                                            Foi um jogo com poucas oportunidades de infiltração muito por causa
+                                            da defesa "fechadinha" de São José, mas conseguiu aproveitar bem as
+                                            oportunidade que teve principalmente em contra-ataques.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-transicao-ofensiva">
                                     <td>Transição</td>
-                                    <td><h5><span class="badge bg-success">75</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">75</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-transicao-ofensiva" class="card card-body collapse">
-                                             Buscou sempre sair com velocidade nos contra-ataques, o que causou alguns turnovers,
-                                             já nas situações normais conseguiu se sair muito bem da pressão tanto por meio de passes 
-                                             como driblando gerando boas oportunidades de pontuar.
+                                            Buscou sempre sair com velocidade nos contra-ataques, o que causou alguns
+                                            turnovers,
+                                            já nas situações normais conseguiu se sair muito bem da pressão tanto por
+                                            meio de passes
+                                            como driblando gerando boas oportunidades de pontuar.
                                         </div>
                                     </td>
                                 </tr>
@@ -179,14 +278,18 @@
                                     <th>
                                         <h3>Defensivo: </h3>
                                     </th>
-                                    <th><h3><span class="badge bg-success">76,00</span></h3></th>
+                                    <th>
+                                        <h3><span class="badge bg-success">76,00</span></h3>
+                                    </th>
                                 </tr>
                             </thead>
                             <!-- defensive table body-->
                             <tbody>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-dedicacao-defensiva">
                                     <td>Dedicação</td>
-                                    <td><h5><span class="badge bg-success">90</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">90</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
@@ -198,7 +301,9 @@
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-defesa-bola">
                                     <td>Defesa na bola</td>
-                                    <td><h5><span class="badge bg-success">95</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">95</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
@@ -210,39 +315,46 @@
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-pick">
                                     <td>Pick and roll</td>
-                                    <td><h5><span class="badge bg-danger">40</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-danger">40</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-pick" class="card card-body collapse">
-                                            Teve muitas dificuldades em sair dos picks, comprometeu a defesa todas as vezes
-                                            que esteve nessa situação demonstarando pouca percepção defensiva e 
-                                            falha na comunicação com as companheiras na hora de realizar a troca. 
+                                            Teve muitas dificuldades em sair dos picks, comprometeu a defesa todas as
+                                            vezes
+                                            que esteve nessa situação demonstarando pouca percepção defensiva e
+                                            falha na comunicação com as companheiras na hora de realizar a troca.
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-ajuda">
                                     <td>Ajuda defensiva</td>
-                                    <td><h5><span class="badge bg-warning">55</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-warning">55</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-ajuda" class="card card-body collapse">
                                             Quando a bola não está com a sua marcadora ou na sua zona de marcação,
-                                            tem muitas dificuldades de observar a bola e a sua marcadora ao mesmo 
+                                            tem muitas dificuldades de observar a bola e a sua marcadora ao mesmo
                                             tempo e as vezes fica "assistindo ao jogo".
                                         </div>
                                     </td>
                                 </tr>
                                 <tr data-bs-toggle="collapse" data-bs-target="#card-transicao-defensiva">
                                     <td>Transição</td>
-                                    <td><h5><span class="badge bg-success">100</span></h5></td>
+                                    <td>
+                                        <h5><span class="badge bg-success">100</span></h5>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <div id="card-transicao-defensiva" class="card card-body collapse">
-                                            Fez um excelente trabalho no balanço defensivo impedindo muitos dos 
-                                            contra-ataques adversários, sendo sempre a primeira a compor a defesa 
+                                            Fez um excelente trabalho no balanço defensivo impedindo muitos dos
+                                            contra-ataques adversários, sendo sempre a primeira a compor a defesa
                                             e sempre contestando arremessos e bandejas sem cometer faltas.
                                         </div>
                                     </td>
@@ -286,7 +398,7 @@
         <!-- events list-->
         <div id="events-container" class="col-5 m-1 shadow-lg border max-vh-100">
             <h2 id="events-header" class="text-center bg-primary text-light border rounded p-1">Eventos</h2>
-            <ol id="events-list">
+            <ol id="events-list" class="list-group m-4 mt-1">
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-45
                         esquerdo-0:43</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=197s" target="_blank">Q1-TO-Bola
@@ -308,14 +420,20 @@
                         direita-17:47</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1085s" target="_blank">Q1-TO-Bola
                         roubada-18:05</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=45s" target="_blank">Q3-OBS-Prestar
+                        mais atenção no pick and roll, poderia ter passado por baixo.-0:45</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=100s" target="_blank">Q3-3PA-45
                         direito-1:40</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=232s" target="_blank">Q3-NEG-Encostar
+                            na adversária na hora de se desmarcar pra receber a bola.-3:52</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=235s" target="_blank">Q3-TO-Bola
                         roubada-3:55</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=260s" target="_blank">Q3-TO-Pisou
                         fora-4:20</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=440s" target="_blank">Q3-TO-Andada-7:20</a>
                 </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=640s" target="_blank">Q3-POS-Ótima
+                    infiltração-10:40</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=685s" target="_blank">Q3-LL-2/2-11:25</a>
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=925s" target="_blank">Q3-STL-Passe
@@ -347,6 +465,8 @@
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s"
                         target="_blank">Q4-FGA-Embaixo-02:38</a>
                 </li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=168s" target="_blank">Q4-NEG-Deixou a
+                    adversária entrar sozinha-2:48</a></li>
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=240s" target="_blank">Q4-FGA-Medio morta
                         esquerda-04:00</a>
                 </li>
@@ -381,17 +501,6 @@
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1035s" target="_blank">Q4-FGA-Bandeja
                         esquerda-17:15</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=45s" target="_blank">Q3-OBS-Prestar
-                        mais atenção no pick and roll, poderia ter passado por baixo.-0:45</a><i
-                        class="fas fa-trash delete-btn"></i></li>
-                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=232s" target="_blank">Q3-NEG-Encostar
-                        na adversária na hora de se desmarcar pra receber a bola.-3:52</a><i
-                        class="fas fa-trash delete-btn"></i></li>
-                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=640s" target="_blank">Q3-POS-Ótima
-                        infiltração-10:40</a><i class="fas fa-trash delete-btn"></i></li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&amp;t=168s" target="_blank">Q4-NEG-Deixou a
-                        adversária entrar sozinha-2:48</a><i class="fas fa-trash delete-btn"></i></li>
-
             </ol>
         </div>
     </div>
@@ -451,88 +560,122 @@
             const linkText = link.querySelector('a').textContent;
             if (linkText.startsWith('Q1')) {
                 if (linkText.match('FGA')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     fga[0] += 1;
                     eff[0] -= 1;
                 } else if (linkText.match('FGM')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 2;
                     fga[0] += 1;
                     fgm[0] += 1;
                     eff[0] += 2;
                 }
                 else if (linkText.match('3PM')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 3;
                     tpm[0] += 1;
                     tpa[0] += 1;
                     eff[0] += 3;
                 } else if (linkText.match('3PA')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     tpa[0] += 1;
                     eff[0] -= 1;
                 } else if (linkText.match('LL-0/1')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pts[0] += 0;
                     ftm[0] += 0;
                     fta[0] += 1;
                     eff[0] -= 1;
                 } else if (linkText.match('LL-1/1')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 1;
                     ftm[0] += 1;
                     fta[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('LL-0/2')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pts[0] += 0;
                     ftm[0] += 0;
                     fta[0] += 2;
                     eff[0] -= 2;
                 } else if (linkText.match('LL-1/2')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pts[0] += 1;
                     ftm[0] += 1;
                     fta[0] += 2;
                     eff[0] += 0;
                 } else if (linkText.match('LL-2/2')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 2;
                     ftm[0] += 2;
                     fta[0] += 2;
                     eff[0] += 2;
                 } else if (linkText.match('LL-0/3')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pts[0] += 0;
                     ftm[0] += 0;
                     fta[0] += 3;
                     eff[0] -= 3;
                 } else if (linkText.match('LL-1/3')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pts[0] += 1;
                     ftm[0] += 1;
                     fta[0] += 3;
                     eff[0] -= 1;
                 } else if (linkText.match('LL-2/3')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 2;
                     ftm[0] += 2;
                     fta[0] += 3;
                     eff[0] += 1;
                 } else if (linkText.match('LL-3/3')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     pts[0] += 3;
                     ftm[0] += 3;
                     fta[0] += 3;
                     eff[0] += 3;
                 } else if (linkText.match('BLK')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     blk[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('AST')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     ast[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('STL')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     stl[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('TO')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     to[0] += 1;
                     eff[0] -= 1;
                 } else if (linkText.match('ROF')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     rebOff[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('RDF')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-success");
                     rebDef[0] += 1;
                     eff[0] += 1;
                 } else if (linkText.match('PF')) {
+                    link.querySelector('a').classList.add("btn", "btn-outline-danger");
                     pf[0] += 1;
                 }
+            }
+        });
+
+        // stylish a links
+        links.forEach(link => {
+            const linkAnchor = link.querySelector('a');
+            const linkText = linkAnchor.textContent;
+            if (linkText.match('FGA') || linkText.match('3PA') || linkText.match('LL-0') || linkText.match('LL-1/2') || linkText.match('LL-1/3') 
+            || linkText.match('TO') || linkText.match('FP')){
+                linkAnchor.classList.add("btn", "btn-outline-danger");
+            } else if (linkText.match('POS') || linkText.match('NEG') || linkText.match('OBS')){
+                linkAnchor.classList.add("btn", "btn-outline-warning");
+            } else {
+                linkAnchor.classList.add("btn", "btn-outline-success");
             }
         });
 
