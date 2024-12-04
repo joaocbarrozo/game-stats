@@ -17,13 +17,13 @@
     </div>
     <!-- stats container -->
     <div id="body-container" class="row p-2">
-        <div id="stats-container" class="col-5 m-1 shadow-lg border">
+        <div id="stats-container" class="col m-1 shadow-lg border">
             <h2 id="stats-header" class="text-center bg-primary text-light border rounded p-1">Estatísticas</h2>
-            <table class="table table-hover">
+            <table class="table table-hover table-responsive">
                 <tbody>
                     <tr id="btn-pts">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Pontos </strong></button>
+                            <button class="btn btn-outline-secondary"><strong>PTS </strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="pts-stats">0</span></button>
@@ -31,7 +31,7 @@
                     </tr>
                     <tr id="btn-reb">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Rebotes</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>REB</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"> <span id="reb-stats">0</span></button>
@@ -39,7 +39,7 @@
                     </tr>
                     <tr id="btn-ast">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong> Assistências </strong></button>
+                            <button class="btn btn-outline-secondary"><strong> AST </strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"> <span id="ast-stats">0</span></button>
@@ -47,7 +47,7 @@
                     </tr>
                     <tr id="btn-stl">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Roubos</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>STL</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="stl-stats">1</span></button>
@@ -55,7 +55,7 @@
                     </tr>
                     <tr id="btn-blk">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Tocos</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>BLK</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="blk-stats">0</span></button>
@@ -63,7 +63,7 @@
                     </tr>
                     <tr id="btn-to">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Turnovers</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>TOV</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="to-stats">5</span></button>
@@ -71,7 +71,7 @@
                     </tr>
                     <tr id="btn-fg">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>2 pontos</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>FGS</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="fgm-stats">1</span>/<span
@@ -80,7 +80,7 @@
                     </tr>
                     <tr id="btn-3pt">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>3 pontos</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>3PT</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="tpm-stats">0</span>/<span
@@ -89,7 +89,7 @@
                     </tr>
                     <tr id="btn-ft">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Lance Livre</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>FTR</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span><span id="ftm-stats">0</span>/<span
@@ -98,7 +98,7 @@
                     </tr>
                     <tr id="btn-pf">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Faltas:</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>PFS</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="pf-stats">0</span></button>
@@ -106,7 +106,7 @@
                     </tr>
                     <tr id="btn-eff">
                         <td>
-                            <button class="btn btn-outline-secondary"><strong>Eficiência</strong></button>
+                            <button class="btn btn-outline-secondary"><strong>EFF</strong></button>
                         </td>
                         <td>
                             <button class="btn btn-outline-secondary"><span id="eff-stats">0</span></button>
@@ -121,14 +121,14 @@
                 <button id="q3-btn" class="btn btn-primary m-1 shadow-sm">Q3</button>
                 <button id="q4-btn" class="btn btn-primary m-1 shadow-sm">Q4</button>
                 <button id="ot-btn" class="btn btn-primary m-1 shadow-sm">OT</button>
-                <button id="total-btn" class="btn btn-primary m-1 shadow-sm">Total</button>
+                <button id="total-btn" class="btn btn-primary m-1 shadow-sm">ALL</button>
 
             </div>
             <div>
                 <!-- Button trigger modal performance -->
                 <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
                     data-bs-target="#performanceModal">
-                    Desempenho
+                    DESEMPENHO
                 </button>
                 <!-- Button trigger modal analysis 
                 <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
@@ -158,7 +158,7 @@
                                     </th>
                                     <th>
                                         </td>
-                                        <h2><span class="badge bg-success">80</span></h2>
+                                        <h2><span class="badge bg-warning">73,42</span></h2>
                                     </th>
                                 </tr>
                             </thead>
@@ -396,7 +396,7 @@
 
 
         <!-- events list-->
-        <div id="events-container" class="col-5 m-1 shadow-lg border max-vh-100">
+        <div id="events-container" class="col m-1 shadow-lg border max-vh-100">
             <h2 id="events-header" class="text-center bg-primary text-light border rounded p-1">Eventos</h2>
             <ol id="events-list" class="list-group m-4 mt-1">
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-45
@@ -522,6 +522,7 @@
         // variable links to control which links to show
         const links = document.querySelectorAll('#events-list li');
         const statsHeader = document.getElementById("stats-header");
+        const eventsHeader = document.getElementById("events-header");
         // stats vaiables
         let pts = [0, 0, 0, 0, 0]
         let fgm = [0, 0, 0, 0, 0];
@@ -1042,6 +1043,7 @@
         // functions to show stats per quarter and total
         document.getElementById('q1-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Q1";
+            eventsHeader.textContent = "Eventos Q1";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q1')) {
@@ -1069,6 +1071,7 @@
 
         document.getElementById('q2-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Q2";
+            eventsHeader.textContent = "Eventos Q2";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q2')) {
@@ -1095,6 +1098,7 @@
 
         document.getElementById('q3-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Q3";
+            eventsHeader.textContent = "Eventos Q3";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q3')) {
@@ -1121,6 +1125,7 @@
 
         document.getElementById('q4-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Q4";
+            eventsHeader.textContent = "Eventos Q4";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('Q4')) {
@@ -1147,6 +1152,7 @@
 
         document.getElementById('ot-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas OT";
+            eventsHeader.textContent = "Eventos OT";
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
                 if (linkText.startsWith('OT')) {
@@ -1173,6 +1179,7 @@
 
         document.getElementById('total-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Totais";
+            eventsHeader.textContent = "Eventos Totais";
             links.forEach(link => {
                 link.style.display = 'list-item';
             });
@@ -1312,6 +1319,7 @@
 
         // initialize with the total stats
         statsHeader.textContent = "Estatísticas Totais";
+        eventsHeader.textContent = "Eventos Totais";
         ptsStats.textContent = pts[0] + pts[1] + pts[2] + pts[3] + pts[4];
         rebStats.textContent = rebDef[0] + rebOff[0] + rebDef[1] + rebOff[1] + rebDef[2] + rebOff[2] + rebDef[3] + rebOff[3] + rebDef[4] + rebOff[4];
         astStats.textContent = ast[0] + ast[1] + ast[2] + ast[3] + ast[4];
