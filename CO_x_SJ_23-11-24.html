@@ -1,4 +1,5 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,35 @@
 <body class="max-vh-100 overflow-auto">
     <!-- game title-->
     <div id="header-container">
-        <h1 id="header-text" class="text-center bg-primary text-light border rounded shadow m-1 p-1"><strong>Centro Olimpico X São José - Disputa 3º lugar Série Ouro</strong></h1>
+        <h1 id="header-text" class="text-center bg-primary text-light border rounded shadow m-1 p-1"><strong>Centro
+                Olimpico X São José - Disputa 3º lugar Série Ouro</strong></h1>
     </div>
     <!-- stats container -->
     <div id="body-container" class="row p-2">
         <div id="stats-container" class="col-5 m-1 shadow-lg border">
             <h2 id="stats-header" class="text-center bg-primary text-light border rounded p-1">Estatísticas</h2>
-            <p><button id="btn-pts" class="btn btn-secondary rounded-pill shadow-sm"><strong>Pontos: </strong><span id="pts-stats"> 0</span></button></p>
-            <p><button id="btn-reb" class="btn btn-secondary rounded-pill shadow-sm"><strong>Rebotes: </strong><span id="reb-stats">0</span></button></p>
-            <p><button id="btn-ast" class="btn btn-secondary rounded-pill shadow-sm"><strong>Assistências: </strong><span id="ast-stats">0</span></button></p>
-            <p><button id="btn-stl" class="btn btn-secondary rounded-pill shadow-sm"><strong>Roubos: </strong><span id="stl-stats">1</span></button></p>
-            <p><button id="btn-blk" class="btn btn-secondary rounded-pill shadow-sm"><strong>Tocos: </strong><span id="blk-stats">0</span></button></p>
-            <p><button id="btn-to" class="btn btn-secondary rounded-pill shadow-sm"><strong>Turnovers: </strong><span id="to-stats">5</span></button></p>
-            <p><button id="btn-fg" class="btn btn-secondary rounded-pill shadow-sm"><strong>2 pontos: </strong><span id="fgm-stats">1</span>/<span id="fga-stats">1</span></button></p>
-            <p><button id="btn-3pt" class="btn btn-secondary rounded-pill shadow-sm"><strong>3 pontos: </strong><span id="tpm-stats">0</span>/<span id="tpa-stats">0</span></button></p>
-            <p><button id="btn-ft" class="btn btn-secondary rounded-pill shadow-sm"><strong>Lance Livre: </strong><span id="ftm-stats">0</span>/<span id="fta-stats">0</span></button></p>
-            <p><button id="btn-pf" class="btn btn-secondary rounded-pill shadow-sm"><strong>Faltas: </strong><span id="pf-stats">0</span></button></p>
-            <p><button id="btn-eff" class="btn btn-secondary rounded-pill shadow-sm"><strong>Eficiência: </strong><span id="eff-stats">0</span></button></p>
+            <p><button id="btn-pts" class="btn btn-secondary rounded-pill shadow-sm"><strong>Pontos: </strong><span
+                        id="pts-stats"> 0</span></button></p>
+            <p><button id="btn-reb" class="btn btn-secondary rounded-pill shadow-sm"><strong>Rebotes: </strong><span
+                        id="reb-stats">0</span></button></p>
+            <p><button id="btn-ast" class="btn btn-secondary rounded-pill shadow-sm"><strong>Assistências:
+                    </strong><span id="ast-stats">0</span></button></p>
+            <p><button id="btn-stl" class="btn btn-secondary rounded-pill shadow-sm"><strong>Roubos: </strong><span
+                        id="stl-stats">1</span></button></p>
+            <p><button id="btn-blk" class="btn btn-secondary rounded-pill shadow-sm"><strong>Tocos: </strong><span
+                        id="blk-stats">0</span></button></p>
+            <p><button id="btn-to" class="btn btn-secondary rounded-pill shadow-sm"><strong>Turnovers: </strong><span
+                        id="to-stats">5</span></button></p>
+            <p><button id="btn-fg" class="btn btn-secondary rounded-pill shadow-sm"><strong>2 pontos: </strong><span
+                        id="fgm-stats">1</span>/<span id="fga-stats">1</span></button></p>
+            <p><button id="btn-3pt" class="btn btn-secondary rounded-pill shadow-sm"><strong>3 pontos: </strong><span
+                        id="tpm-stats">0</span>/<span id="tpa-stats">0</span></button></p>
+            <p><button id="btn-ft" class="btn btn-secondary rounded-pill shadow-sm"><strong>Lance Livre: </strong><span
+                        id="ftm-stats">0</span>/<span id="fta-stats">0</span></button></p>
+            <p><button id="btn-pf" class="btn btn-secondary rounded-pill shadow-sm"><strong>Faltas: </strong><span
+                        id="pf-stats">0</span></button></p>
+            <p><button id="btn-eff" class="btn btn-secondary rounded-pill shadow-sm"><strong>Eficiência: </strong><span
+                        id="eff-stats">0</span></button></p>
             <!-- buttoms container-->
             <div id="buttoms-container">
                 <button id="q1-btn" class="btn btn-primary m-1 shadow-sm">Q1</button>
@@ -36,135 +49,151 @@
                 <button id="q4-btn" class="btn btn-primary m-1 shadow-sm">Q4</button>
                 <button id="ot-btn" class="btn btn-primary m-1 shadow-sm">OT</button>
                 <button id="total-btn" class="btn btn-primary m-1 shadow-sm">Total</button>
-                
+
             </div>
             <div>
                 <!-- Button trigger modal performance -->
-                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal" data-bs-target="#performanceModal">
+                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
+                    data-bs-target="#performanceModal">
                     Desempenho
                 </button>
                 <!-- Button trigger modal analysis -->
-                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal" data-bs-target="#analysisModal">
+                <button type="button" class="btn btn-primary m-1 shadow-sm" data-bs-toggle="modal"
+                    data-bs-target="#analysisModal">
                     Analise
                 </button>
             </div>
         </div>
-        
-        
+
+
         <!-- Modal performance-->
-        <div class="modal fade" id="performanceModal" tabindex="-1" aria-labelledby="performanceModalLabel" aria-hidden="true">
+        <div class="modal fade" id="performanceModal" tabindex="-1" aria-labelledby="performanceModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h4 class="modal-title" id="performanceModalLabel">Análise de desempenho</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="performanceModalLabel">Análise de desempenho</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <table id="offensive-table" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2>Desempenho Geral: </h2>
+                                    </th>
+                                    <th><button id="btn-general-performance"
+                                            class="btn btn-outline-success btn-lg">85</button></th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h3>Ofensivo: </h3>
+                                    </th>
+                                    <th><button id="btn-ofensive-performance"
+                                            class="btn btn-outline-success">80</button></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dedicação</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Segurança com a bola</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Seleção de arremessos</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Qualidade dos passes</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Infiltração</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Transição</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h3>Defensivo: </h3>
+                                    </th>
+                                    <th><button id="btn-defensive-performance"
+                                            class="btn btn-outline-success">90</button></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dedicação</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Defesa na bola</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Pick and roll</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Ajuda defensiva</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Transição</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    
-                    <table id="offensive-table" class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th><h2>Desempenho Geral: </h2></th>
-                                <th><button id="btn-general-performance" class="btn btn-outline-success btn-lg">85</button></th>
-                            </tr>
-                        </thead>
-                        <thead>
-                            <tr>
-                                <th><h3>Ofensivo: </h3></th>
-                                <th><button id="btn-ofensive-performance" class="btn btn-outline-success">80</button></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dedicação</td>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <td>Segurança com a bola</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Seleção de arremessos</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Qualidade dos passes</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Infiltração</td>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <td>Transição</td>
-                                <td>50</td>
-                            </tr>
-                        </tbody>
-                        <thead>
-                            <tr>
-                                <th><h3>Defensivo: </h3></th>
-                                <th><button id="btn-defensive-performance" class="btn btn-outline-success">90</button></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dedicação</td>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <td>Defesa na bola</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Pick and roll</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Ajuda defensiva</td>
-                                <td>70</td>
-                            </tr>
-                            <tr>
-                                <td>Transição</td>
-                                <td>50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
             </div>
         </div>
 
-         <!-- Modal analysis -->
-         <div class="modal fade" id="analysisModal" tabindex="-1" aria-labelledby="analysisModalLabel" aria-hidden="true">
+        <!-- Modal analysis -->
+        <div class="modal fade" id="analysisModal" tabindex="-1" aria-labelledby="analysisModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog w-50">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h4 class="modal-title" id="analysisModalLabel">Análise de desempenho</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="analysisModalLabel">Análise de desempenho</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-outline-info" onclick="reloadVideo()"><iframe width="320" height="180"
+                                src="https://www.youtube.com/embed/wFUlhoGekWs?autoplay=1&controls=0&start=100&end=115&loop=1&rel=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    
-                    <button class="btn btn-outline-info" onclick="reloadVideo()"><iframe width="320" height="180" src="https://www.youtube.com/embed/wFUlhoGekWs?autoplay=1&controls=0&start=100&end=115&loop=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                    </iframe>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
             </div>
         </div>
-        
+
 
         <!-- events list-->
         <div id="events-container" class="col-5 m-1 shadow-lg border max-vh-100">
             <h2 id="events-header" class="text-center bg-primary text-light border rounded p-1">Eventos</h2>
             <ol id="events-list">
-                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-45 esquerdo-0:43</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s" target="_blank">Q1-3PA-45
+                        esquerdo-0:43</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=197s" target="_blank">Q1-TO-Bola
                         roubada-3:17</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=255s" target="_blank">Q1-TO-Passe
@@ -175,15 +204,17 @@
                         interceptado-5:15</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=525s" target="_blank">Q1-TO-8
                         segundos-8:45</a></li>
-                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=932s" target="_blank">Q1-3PA-45 esquerdo-15:32</a>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=932s" target="_blank">Q1-3PA-45
+                        esquerdo-15:32</a>
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=985s" target="_blank">Q1-TO-Passe
                         errado-16:25</a></li>
-                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1067s"
-                        target="_blank">Q1-FGM-Bandeja direita-17:47</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1067s" target="_blank">Q1-FGM-Bandeja
+                        direita-17:47</a></li>
                 <li><a href="https://www.youtube.com/watch?v=wFUlhoGekWs&t=1085s" target="_blank">Q1-TO-Bola
                         roubada-18:05</a></li>
-                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=100s" target="_blank">Q3-3PA-45 direito-1:40</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=100s" target="_blank">Q3-3PA-45
+                        direito-1:40</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=235s" target="_blank">Q3-TO-Bola
                         roubada-3:55</a></li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=260s" target="_blank">Q3-TO-Pisou
@@ -198,7 +229,8 @@
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=972s" target="_blank">Q3-FGA-Bandeja
                         direita livre-16:12</a></li>
-                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1038s" target="_blank">Q3-3PA-Frente-17:18</a>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1038s"
+                        target="_blank">Q3-3PA-Frente-17:18</a>
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&t=1215s" target="_blank">Q3-TO-Passe
                         errado-20:15</a></li>
@@ -208,38 +240,63 @@
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=55s" target="_blank">Q4-STL-Roubo-00:55</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=60s" target="_blank">Q4-FGM-Bandeja esquerda-01:00</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=60s" target="_blank">Q4-FGM-Bandeja
+                        esquerda-01:00</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=155s" target="_blank">Q4-FGA-Embaixo-02:35</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=155s"
+                        target="_blank">Q4-FGA-Embaixo-02:35</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s" target="_blank">Q4-ROF-Rebote ofensivo-02:38</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s" target="_blank">Q4-ROF-Rebote
+                        ofensivo-02:38</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s" target="_blank">Q4-FGA-Embaixo-02:38</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=158s"
+                        target="_blank">Q4-FGA-Embaixo-02:38</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=240s" target="_blank">Q4-FGA-Medio morta esquerda-04:00</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=240s" target="_blank">Q4-FGA-Medio morta
+                        esquerda-04:00</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=265s" target="_blank">Q4-3PA-45 esquerda-04:25</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=265s" target="_blank">Q4-3PA-45
+                        esquerda-04:25</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=270s" target="_blank">Q4-AST-Bola de 3-04:30</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=270s" target="_blank">Q4-AST-Bola de
+                        3-04:30</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=281s" target="_blank">Q4-STL-Passe interceptado-04:41</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=281s" target="_blank">Q4-STL-Passe
+                        interceptado-04:41</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=307s" target="_blank">Q4-FGA-floater morta esquerda-05:07</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=307s" target="_blank">Q4-FGA-floater morta
+                        esquerda-05:07</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=325s" target="_blank">Q4-3PA-45 direita-05:25</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=325s" target="_blank">Q4-3PA-45
+                        direita-05:25</a>
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=752s" target="_blank">Q4-PF-Falta-12:32</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=810s" target="_blank">Q4-RDF-Rebote defensivo-13:30</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=810s" target="_blank">Q4-RDF-Rebote
+                        defensivo-13:30</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=845s" target="_blank">Q4-TO-Pisou fora-14:05</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=845s" target="_blank">Q4-TO-Pisou
+                        fora-14:05</a>
                 </li>
                 <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=940s" target="_blank">Q4-STL-Roubo-15:40</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1005s" target="_blank">Q4-FGM-Bandeja direita-16:45</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1005s" target="_blank">Q4-FGM-Bandeja
+                        direita-16:45</a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1035s" target="_blank">Q4-FGA-Bandeja esquerda-17:15</a>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&t=1035s" target="_blank">Q4-FGA-Bandeja
+                        esquerda-17:15</a>
                 </li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=45s" target="_blank">Q3-OBS-Prestar
+                        mais atenção no pick and roll, poderia ter passado por baixo.-0:45</a><i
+                        class="fas fa-trash delete-btn"></i></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=232s" target="_blank">Q3-NEG-Encostar
+                        na adversária na hora de se desmarcar pra receber a bola.-3:52</a><i
+                        class="fas fa-trash delete-btn"></i></li>
+                <li><a href="https://www.youtube.com/watch?v=GRKAjBQiKDY&amp;t=640s" target="_blank">Q3-POS-Ótima
+                        infiltração-10:40</a><i class="fas fa-trash delete-btn"></i></li>
+                <li><a href="https://www.youtube.com/watch?v=ftaAO6nakVw&amp;t=168s" target="_blank">Q4-NEG-Deixou a
+                        adversária entrar sozinha-2:48</a><i class="fas fa-trash delete-btn"></i></li>
+
             </ol>
         </div>
     </div>
@@ -249,12 +306,12 @@
     <script>
         // Function to reload video
         function reloadVideo() {
-        var frames = document.getElementsByTagName("iframe");
-        Array.prototype.forEach.call(frames, function(frame) {
-            var src = frame.src;
-            frame.src = ''; // Unload the iframe
-            frame.src = src; // Reload the iframe
-        });
+            var frames = document.getElementsByTagName("iframe");
+            Array.prototype.forEach.call(frames, function (frame) {
+                var src = frame.src;
+                frame.src = ''; // Unload the iframe
+                frame.src = src; // Reload the iframe
+            });
         }
 
 
@@ -293,7 +350,7 @@
         const ftaStats = document.getElementById('fta-stats');
         const pfStats = document.getElementById('pf-stats');
         const effStats = document.getElementById('eff-stats');
-        
+
         // calculate Q1 stats
         links.forEach(link => {
             const linkText = link.querySelector('a').textContent;
@@ -564,8 +621,8 @@
             }
         });
 
-         // calculate Q4 stats
-         links.forEach(link => {
+        // calculate Q4 stats
+        links.forEach(link => {
             const linkText = link.querySelector('a').textContent;
             if (linkText.startsWith('Q4')) {
                 if (linkText.match('FGA')) {
@@ -908,7 +965,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-reb').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -952,7 +1009,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-to').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -963,7 +1020,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-fg').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -974,7 +1031,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-3pt').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -985,7 +1042,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-ft').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -996,7 +1053,7 @@
                 }
             });
         });
-        
+
         document.getElementById('btn-pf').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
@@ -1011,7 +1068,7 @@
         document.getElementById('btn-eff').addEventListener('click', function () {
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
-                link.style.display = 'list-item'; 
+                link.style.display = 'list-item';
             });
         });
 
@@ -1034,4 +1091,5 @@
 
     </script>
 </body>
+
 </html>
