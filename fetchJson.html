@@ -32,12 +32,12 @@ function fetchData() {
     fetch('https://raw.githubusercontent.com/joaocbarrozo/game-stats/refs/heads/main/jogos.JSON')
         .then(response => response.json())
         .then(data => {
-            const links = data["jogadores"][0]["Tais"][0]["links"][0];
-            const link2 = data["jogadores"][0]["Tais"][0]["links"][0][1]; 
+            const links = data["jogadores"][0]["Tais"][0]["links"];
+            const desempenho = data["jogadores"][0]["Tais"][0]["desempenho"]["valor"]; 
             const dataDiv = document.getElementById('data');
             const orderedList = document.getElementById('list');
             
-            dataDiv.innerHTML = JSON.stringify(links, null, 2);
+            dataDiv.innerHTML = JSON.stringify(desempenho, null, 2);
             links.forEach(link => {
                 // Create a new list item element
             const listItem = document.createElement('li');
