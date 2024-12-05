@@ -532,238 +532,143 @@
         });
 
         //calculates stats per quarter
-        function calculateStats (links, quarters){
-            for(let i = 0; i < quarters.length; i++){
+        function calculateStats(links, quarters) {
+            for (let i = 0; i < quarters.length; i++) {
                 links.forEach(link => {
                     const linkText = link.querySelector('a').textContent;
-                    if (linkText.startsWith(quarters[i])){
+                    if (linkText.startsWith(quarters[i])) {
                         if (linkText.match('FGA')) {
-                    fga[i] += 1;
-                    eff[i] -= 1;
-                } else if (linkText.match('FGM')) {
-                    pts[i] += 2;
-                    fga[i] += 1;
-                    fgm[i] += 1;
-                    eff[i] += 2;
-                }
-                else if (linkText.match('3PM')) {
-                    pts[i] += 3;
-                    tpm[i] += 1;
-                    tpa[i] += 1;
-                    eff[i] += 3;
-                } else if (linkText.match('3PA')) {
-                    tpa[i] += 1;
-                    eff[i] -= 1;
-                } else if (linkText.match('LL-0/1')) {
-                    pts[i] += 0;
-                    ftm[i] += 0;
-                    fta[i] += 1;
-                    eff[i] -= 1;
-                } else if (linkText.match('LL-1/1')) {
-                    pts[i] += 1;
-                    ftm[i] += 1;
-                    fta[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('LL-0/2')) {
-                    pts[i] += 0;
-                    ftm[i] += 0;
-                    fta[i] += 2;
-                    eff[i] -= 2;
-                } else if (linkText.match('LL-1/2')) {
-                    pts[i] += 1;
-                    ftm[i] += 1;
-                    fta[i] += 2;
-                    eff[i] += 0;
-                } else if (linkText.match('LL-2/2')) {
-                    pts[i] += 2;
-                    ftm[i] += 2;
-                    fta[i] += 2;
-                    eff[i] += 2;
-                } else if (linkText.match('LL-0/3')) {
-                    pts[i] += 0;
-                    ftm[i] += 0;
-                    fta[i] += 3;
-                    eff[i] -= 3;
-                } else if (linkText.match('LL-1/3')) {
-                    pts[i] += 1;
-                    ftm[i] += 1;
-                    fta[i] += 3;
-                    eff[i] -= 1;
-                } else if (linkText.match('LL-2/3')) {
-                    pts[i] += 2;
-                    ftm[i] += 2;
-                    fta[i] += 3;
-                    eff[i] += 1;
-                } else if (linkText.match('LL-3/3')) {
-                    pts[i] += 3;
-                    ftm[i] += 3;
-                    fta[i] += 3;
-                    eff[i] += 3;
-                } else if (linkText.match('BLK')) {
-                    blk[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('AST')) {
-                    ast[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('STL')) {
-                    stl[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('TO')) {
-                    to[i] += 1;
-                    eff[i] -= 1;
-                } else if (linkText.match('ROF')) {
-                    rebOff[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('RDF')) {
-                    rebDef[i] += 1;
-                    eff[i] += 1;
-                } else if (linkText.match('PF')) {
-                    pf[i] += 1;
-                }
+                            fga[i] += 1;
+                            eff[i] -= 1;
+                        } else if (linkText.match('FGM')) {
+                            pts[i] += 2;
+                            fga[i] += 1;
+                            fgm[i] += 1;
+                            eff[i] += 2;
+                        }
+                        else if (linkText.match('3PM')) {
+                            pts[i] += 3;
+                            tpm[i] += 1;
+                            tpa[i] += 1;
+                            eff[i] += 3;
+                        } else if (linkText.match('3PA')) {
+                            tpa[i] += 1;
+                            eff[i] -= 1;
+                        } else if (linkText.match('LL-0/1')) {
+                            pts[i] += 0;
+                            ftm[i] += 0;
+                            fta[i] += 1;
+                            eff[i] -= 1;
+                        } else if (linkText.match('LL-1/1')) {
+                            pts[i] += 1;
+                            ftm[i] += 1;
+                            fta[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('LL-0/2')) {
+                            pts[i] += 0;
+                            ftm[i] += 0;
+                            fta[i] += 2;
+                            eff[i] -= 2;
+                        } else if (linkText.match('LL-1/2')) {
+                            pts[i] += 1;
+                            ftm[i] += 1;
+                            fta[i] += 2;
+                            eff[i] += 0;
+                        } else if (linkText.match('LL-2/2')) {
+                            pts[i] += 2;
+                            ftm[i] += 2;
+                            fta[i] += 2;
+                            eff[i] += 2;
+                        } else if (linkText.match('LL-0/3')) {
+                            pts[i] += 0;
+                            ftm[i] += 0;
+                            fta[i] += 3;
+                            eff[i] -= 3;
+                        } else if (linkText.match('LL-1/3')) {
+                            pts[i] += 1;
+                            ftm[i] += 1;
+                            fta[i] += 3;
+                            eff[i] -= 1;
+                        } else if (linkText.match('LL-2/3')) {
+                            pts[i] += 2;
+                            ftm[i] += 2;
+                            fta[i] += 3;
+                            eff[i] += 1;
+                        } else if (linkText.match('LL-3/3')) {
+                            pts[i] += 3;
+                            ftm[i] += 3;
+                            fta[i] += 3;
+                            eff[i] += 3;
+                        } else if (linkText.match('BLK')) {
+                            blk[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('AST')) {
+                            ast[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('STL')) {
+                            stl[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('TO')) {
+                            to[i] += 1;
+                            eff[i] -= 1;
+                        } else if (linkText.match('ROF')) {
+                            rebOff[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('RDF')) {
+                            rebDef[i] += 1;
+                            eff[i] += 1;
+                        } else if (linkText.match('PF')) {
+                            pf[i] += 1;
+                        }
                     }
                 })
             }
         }
 
-        calculateStats(links, quarters);
-
-        // functions to show stats per quarter and total
-        document.getElementById('q1-btn').addEventListener('click', function () {
-            statsHeader.textContent = "Estatísticas Q1";
-            eventsHeader.textContent = "Eventos Q1";
+        // function to show stats per quarter and total
+        function statsQuarter(quarter) {
+            statsHeader.textContent = `Estatísticas ${quarter}`;
+            eventsHeader.textContent = `Eventos ${quarter}`;
+            let i = 0;
+            if (quarter == "Q2"){
+                i = 1;
+            } else if (quarter == "Q3"){
+                i = 2;
+            } else if (quarter == "Q4"){
+                i = 3;
+            } else if (quarter == "OT"){
+                i = 4;
+            }
             links.forEach(link => {
                 const linkText = link.querySelector('a').textContent;
-                if (linkText.startsWith('Q1')) {
+                if (linkText.startsWith(quarter)) {
                     link.style.display = 'list-item';
                 } else {
                     link.style.display = 'none';
                 }
             });
-            ptsStats.textContent = pts[0];
-            rebStats.textContent = rebDef[0] + rebOff[0];
-            astStats.textContent = ast[0];
-            stlStats.textContent = stl[0];
-            blkStats.textContent = blk[0];
-            toStats.textContent = to[0];
-            fgmStats.textContent = fgm[0];
-            fgaStats.textContent = fga[0];
-            tpmStats.textContent = tpm[0];
-            tpaStats.textContent = tpa[0];
-            ftmStats.textContent = ftm[0];
-            ftaStats.textContent = fta[0];
-            pfStats.textContent = pf[0];
-            effStats.textContent = eff[0];
+            ptsStats.textContent = pts[i];
+            rebStats.textContent = rebDef[i] + rebOff[i];
+            astStats.textContent = ast[i];
+            stlStats.textContent = stl[i];
+            blkStats.textContent = blk[i];
+            toStats.textContent = to[i];
+            fgmStats.textContent = fgm[i];
+            fgaStats.textContent = fga[i];
+            tpmStats.textContent = tpm[i];
+            tpaStats.textContent = tpa[i];
+            ftmStats.textContent = ftm[i];
+            ftaStats.textContent = fta[i];
+            pfStats.textContent = pf[i];
+            effStats.textContent = eff[i];
+        }
 
-        });
-
-        document.getElementById('q2-btn').addEventListener('click', function () {
-            statsHeader.textContent = "Estatísticas Q2";
-            eventsHeader.textContent = "Eventos Q2";
-            links.forEach(link => {
-                const linkText = link.querySelector('a').textContent;
-                if (linkText.startsWith('Q2')) {
-                    link.style.display = 'list-item';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-            ptsStats.textContent = pts[1];
-            rebStats.textContent = rebDef[1] + rebOff[1];
-            astStats.textContent = ast[1];
-            stlStats.textContent = stl[1];
-            blkStats.textContent = blk[1];
-            toStats.textContent = to[1];
-            fgmStats.textContent = fgm[1];
-            fgaStats.textContent = fga[1];
-            tpmStats.textContent = tpm[1];
-            tpaStats.textContent = tpa[1];
-            ftmStats.textContent = ftm[1];
-            ftaStats.textContent = fta[1];
-            pfStats.textContent = pf[1];
-            effStats.textContent = eff[1];
-        });
-
-        document.getElementById('q3-btn').addEventListener('click', function () {
-            statsHeader.textContent = "Estatísticas Q3";
-            eventsHeader.textContent = "Eventos Q3";
-            links.forEach(link => {
-                const linkText = link.querySelector('a').textContent;
-                if (linkText.startsWith('Q3')) {
-                    link.style.display = 'list-item';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-            ptsStats.textContent = pts[2];
-            rebStats.textContent = rebDef[2] + rebOff[2];
-            astStats.textContent = ast[2];
-            stlStats.textContent = stl[2];
-            blkStats.textContent = blk[2];
-            toStats.textContent = to[2];
-            fgmStats.textContent = fgm[2];
-            fgaStats.textContent = fga[2];
-            tpmStats.textContent = tpm[2];
-            tpaStats.textContent = tpa[2];
-            ftmStats.textContent = ftm[2];
-            ftaStats.textContent = fta[2];
-            pfStats.textContent = pf[2];
-            effStats.textContent = eff[2];
-        });
-
-        document.getElementById('q4-btn').addEventListener('click', function () {
-            statsHeader.textContent = "Estatísticas Q4";
-            eventsHeader.textContent = "Eventos Q4";
-            links.forEach(link => {
-                const linkText = link.querySelector('a').textContent;
-                if (linkText.startsWith('Q4')) {
-                    link.style.display = 'list-item';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-            ptsStats.textContent = pts[3];
-            rebStats.textContent = rebDef[3] + rebOff[3];
-            astStats.textContent = ast[3];
-            stlStats.textContent = stl[3];
-            blkStats.textContent = blk[3];
-            toStats.textContent = to[3];
-            fgmStats.textContent = fgm[3];
-            fgaStats.textContent = fga[3];
-            tpmStats.textContent = tpm[3];
-            tpaStats.textContent = tpa[3];
-            ftmStats.textContent = ftm[3];
-            ftaStats.textContent = fta[3];
-            pfStats.textContent = pf[3];
-            effStats.textContent = eff[3];
-        });
-
-        document.getElementById('ot-btn').addEventListener('click', function () {
-            statsHeader.textContent = "Estatísticas OT";
-            eventsHeader.textContent = "Eventos OT";
-            links.forEach(link => {
-                const linkText = link.querySelector('a').textContent;
-                if (linkText.startsWith('OT')) {
-                    link.style.display = 'list-item';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-            ptsStats.textContent = pts[4];
-            rebStats.textContent = rebDef[4] + rebOff[4];
-            astStats.textContent = ast[4];
-            stlStats.textContent = stl[4];
-            blkStats.textContent = blk[4];
-            toStats.textContent = to[4];
-            fgmStats.textContent = fgm[4];
-            fgaStats.textContent = fga[4];
-            tpmStats.textContent = tpm[4];
-            tpaStats.textContent = tpa[4];
-            ftmStats.textContent = ftm[4];
-            ftaStats.textContent = fta[4];
-            pfStats.textContent = pf[4];
-            effStats.textContent = eff[4];
-        });
-
+        document.getElementById('q1-btn').addEventListener('click', () => statsQuarter("Q1"));
+        document.getElementById('q2-btn').addEventListener('click', () => statsQuarter("Q2"));
+        document.getElementById('q3-btn').addEventListener('click', () => statsQuarter("Q3"));
+        document.getElementById('q4-btn').addEventListener('click', () => statsQuarter("Q4"));
+        document.getElementById('ot-btn').addEventListener('click', () => statsQuarter("OT"));
+        
         document.getElementById('total-btn').addEventListener('click', function () {
             statsHeader.textContent = "Estatísticas Totais";
             eventsHeader.textContent = "Eventos Totais";
@@ -903,6 +808,9 @@
                 link.style.display = 'list-item';
             });
         });
+
+        // call function to calculate stats
+        calculateStats(links, quarters);
 
         // initialize with the total stats
         statsHeader.textContent = "Estatísticas Totais";
