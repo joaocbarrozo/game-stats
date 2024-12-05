@@ -476,19 +476,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
-        // Function to reload video
-        function reloadVideo() {
-            var frames = document.getElementsByTagName("iframe");
-            Array.prototype.forEach.call(frames, function (frame) {
-                var src = frame.src;
-                frame.src = ''; // Unload the iframe
-                frame.src = src; // Reload the iframe
-            });
-        }
-
-
         // variable links to control which links to show
         const links = document.querySelectorAll('#events-list li');
+        // variables to change headers text
         const statsHeader = document.getElementById("stats-header");
         const eventsHeader = document.getElementById("events-header");
         // stats vaiables
@@ -507,6 +497,9 @@
         let fta = [0, 0, 0, 0, 0];
         let pf = [0, 0, 0, 0, 0];
         let eff = [0, 0, 0, 0, 0];
+
+        // quarters variables
+        const quarters = ["Q1", "Q2", "Q3", "Q4", "OT"]
 
         // span variables to show stats
         const ptsStats = document.getElementById('pts-stats');
@@ -538,455 +531,101 @@
             }
         });
 
-        // calculate Q1 stats
-        links.forEach(link => {
-            const linkText = link.querySelector('a').textContent;
-            if (linkText.startsWith('Q1')) {
-                if (linkText.match('FGA')) {
-                    fga[0] += 1;
-                    eff[0] -= 1;
+        //calculates stats per quarter
+        function calculateStats (links, quarters){
+            for(let i = 0; i < quarters.length; i++){
+                links.forEach(link => {
+                    const linkText = link.querySelector('a').textContent;
+                    if (linkText.startsWith(quarters[i])){
+                        if (linkText.match('FGA')) {
+                    fga[i] += 1;
+                    eff[i] -= 1;
                 } else if (linkText.match('FGM')) {
-                    pts[0] += 2;
-                    fga[0] += 1;
-                    fgm[0] += 1;
-                    eff[0] += 2;
+                    pts[i] += 2;
+                    fga[i] += 1;
+                    fgm[i] += 1;
+                    eff[i] += 2;
                 }
                 else if (linkText.match('3PM')) {
-                    pts[0] += 3;
-                    tpm[0] += 1;
-                    tpa[0] += 1;
-                    eff[0] += 3;
+                    pts[i] += 3;
+                    tpm[i] += 1;
+                    tpa[i] += 1;
+                    eff[i] += 3;
                 } else if (linkText.match('3PA')) {
-                    tpa[0] += 1;
-                    eff[0] -= 1;
+                    tpa[i] += 1;
+                    eff[i] -= 1;
                 } else if (linkText.match('LL-0/1')) {
-                    pts[0] += 0;
-                    ftm[0] += 0;
-                    fta[0] += 1;
-                    eff[0] -= 1;
+                    pts[i] += 0;
+                    ftm[i] += 0;
+                    fta[i] += 1;
+                    eff[i] -= 1;
                 } else if (linkText.match('LL-1/1')) {
-                    pts[0] += 1;
-                    ftm[0] += 1;
-                    fta[0] += 1;
-                    eff[0] += 1;
+                    pts[i] += 1;
+                    ftm[i] += 1;
+                    fta[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('LL-0/2')) {
-                    pts[0] += 0;
-                    ftm[0] += 0;
-                    fta[0] += 2;
-                    eff[0] -= 2;
+                    pts[i] += 0;
+                    ftm[i] += 0;
+                    fta[i] += 2;
+                    eff[i] -= 2;
                 } else if (linkText.match('LL-1/2')) {
-                    pts[0] += 1;
-                    ftm[0] += 1;
-                    fta[0] += 2;
-                    eff[0] += 0;
+                    pts[i] += 1;
+                    ftm[i] += 1;
+                    fta[i] += 2;
+                    eff[i] += 0;
                 } else if (linkText.match('LL-2/2')) {
-                    pts[0] += 2;
-                    ftm[0] += 2;
-                    fta[0] += 2;
-                    eff[0] += 2;
+                    pts[i] += 2;
+                    ftm[i] += 2;
+                    fta[i] += 2;
+                    eff[i] += 2;
                 } else if (linkText.match('LL-0/3')) {
-                    pts[0] += 0;
-                    ftm[0] += 0;
-                    fta[0] += 3;
-                    eff[0] -= 3;
+                    pts[i] += 0;
+                    ftm[i] += 0;
+                    fta[i] += 3;
+                    eff[i] -= 3;
                 } else if (linkText.match('LL-1/3')) {
-                    pts[0] += 1;
-                    ftm[0] += 1;
-                    fta[0] += 3;
-                    eff[0] -= 1;
+                    pts[i] += 1;
+                    ftm[i] += 1;
+                    fta[i] += 3;
+                    eff[i] -= 1;
                 } else if (linkText.match('LL-2/3')) {
-                    pts[0] += 2;
-                    ftm[0] += 2;
-                    fta[0] += 3;
-                    eff[0] += 1;
+                    pts[i] += 2;
+                    ftm[i] += 2;
+                    fta[i] += 3;
+                    eff[i] += 1;
                 } else if (linkText.match('LL-3/3')) {
-                    pts[0] += 3;
-                    ftm[0] += 3;
-                    fta[0] += 3;
-                    eff[0] += 3;
+                    pts[i] += 3;
+                    ftm[i] += 3;
+                    fta[i] += 3;
+                    eff[i] += 3;
                 } else if (linkText.match('BLK')) {
-                    blk[0] += 1;
-                    eff[0] += 1;
+                    blk[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('AST')) {
-                    ast[0] += 1;
-                    eff[0] += 1;
+                    ast[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('STL')) {
-                    stl[0] += 1;
-                    eff[0] += 1;
+                    stl[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('TO')) {
-                    to[0] += 1;
-                    eff[0] -= 1;
+                    to[i] += 1;
+                    eff[i] -= 1;
                 } else if (linkText.match('ROF')) {
-                    rebOff[0] += 1;
-                    eff[0] += 1;
+                    rebOff[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('RDF')) {
-                    rebDef[0] += 1;
-                    eff[0] += 1;
+                    rebDef[i] += 1;
+                    eff[i] += 1;
                 } else if (linkText.match('PF')) {
-                    pf[0] += 1;
+                    pf[i] += 1;
                 }
+                    }
+                })
             }
-        });
+        }
 
-        // calculate Q2 stats
-        links.forEach(link => {
-            const linkText = link.querySelector('a').textContent;
-            if (linkText.startsWith('Q2')) {
-                if (linkText.match('FGA')) {
-                    fga[1] += 1;
-                    eff[1] -= 1;
-                } else if (linkText.match('FGM')) {
-                    pts[1] += 2;
-                    fga[1] += 1;
-                    fgm[1] += 1;
-                    eff[1] += 2;
-                }
-                else if (linkText.match('3PM')) {
-                    pts[1] += 3;
-                    tpm[1] += 1;
-                    tpa[1] += 1;
-                    eff[1] += 3;
-                } else if (linkText.match('3PA')) {
-                    tpa[1] += 1;
-                    eff[1] -= 1;
-                } else if (linkText.match('LL-0/1')) {
-                    pts[1] += 0;
-                    ftm[1] += 0;
-                    fta[1] += 1;
-                    eff[1] -= 1;
-                } else if (linkText.match('LL-1/1')) {
-                    pts[2] += 1;
-                    ftm[1] += 1;
-                    fta[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('LL-0/2')) {
-                    pts[1] += 0;
-                    ftm[1] += 0;
-                    fta[1] += 2;
-                    eff[1] -= 2;
-                } else if (linkText.match('LL-1/2')) {
-                    pts[1] += 1;
-                    ftm[1] += 1;
-                    fta[1] += 2;
-                    eff[1] += 0;
-                } else if (linkText.match('LL-2/2')) {
-                    pts[1] += 2;
-                    ftm[1] += 2;
-                    fta[1] += 2;
-                    eff[1] += 2;
-                } else if (linkText.match('LL-0/3')) {
-                    pts[1] += 0;
-                    ftm[1] += 0;
-                    fta[1] += 3;
-                    eff[1] -= 3;
-                } else if (linkText.match('LL-1/3')) {
-                    pts[1] += 1;
-                    ftm[1] += 1;
-                    fta[1] += 3;
-                    eff[1] -= 1;
-                } else if (linkText.match('LL-2/3')) {
-                    pts[1] += 2;
-                    ftm[1] += 2;
-                    fta[1] += 3;
-                    eff[1] += 1;
-                } else if (linkText.match('LL-3/3')) {
-                    pts[1] += 3;
-                    ftm[1] += 3;
-                    fta[1] += 3;
-                    eff[1] += 3;
-                } else if (linkText.match('BLK')) {
-                    blk[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('AST')) {
-                    ast[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('STL')) {
-                    stl[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('TO')) {
-                    to[1] += 1;
-                    eff[1] -= 1;
-                } else if (linkText.match('ROF')) {
-                    rebOff[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('RDF')) {
-                    rebDef[1] += 1;
-                    eff[1] += 1;
-                } else if (linkText.match('PF')) {
-                    pf[1] += 1;
-                }
-            }
-        });
-
-        // calculate Q3 stats
-        links.forEach(link => {
-            const linkText = link.querySelector('a').textContent;
-            if (linkText.startsWith('Q3')) {
-                if (linkText.match('FGA')) {
-                    fga[2] += 1;
-                    eff[2] -= 1;
-                } else if (linkText.match('FGM')) {
-                    pts[2] += 2;
-                    fga[2] += 1;
-                    fgm[2] += 1;
-                    eff[2] += 2;
-                }
-                else if (linkText.match('3PM')) {
-                    pts[2] += 3;
-                    tpm[2] += 1;
-                    tpa[2] += 1;
-                    eff[2] += 3;
-                } else if (linkText.match('3PA')) {
-                    tpa[2] += 1;
-                    eff[2] -= 1;
-                } else if (linkText.match('LL-0/1')) {
-                    pts[2] += 0;
-                    ftm[2] += 0;
-                    fta[2] += 1;
-                    eff[2] -= 1;
-                } else if (linkText.match('LL-1/1')) {
-                    pts[2] += 1;
-                    ftm[2] += 1;
-                    fta[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('LL-0/2')) {
-                    pts[2] += 0;
-                    ftm[2] += 0;
-                    fta[2] += 2;
-                    eff[2] -= 2;
-                } else if (linkText.match('LL-1/2')) {
-                    pts[2] += 1;
-                    ftm[2] += 1;
-                    fta[2] += 2;
-                    eff[2] += 0;
-                } else if (linkText.match('LL-2/2')) {
-                    pts[2] += 2;
-                    ftm[2] += 2;
-                    fta[2] += 2;
-                    eff[2] += 2;
-                } else if (linkText.match('LL-0/3')) {
-                    pts[2] += 0;
-                    ftm[2] += 0;
-                    fta[2] += 3;
-                    eff[2] -= 3;
-                } else if (linkText.match('LL-1/3')) {
-                    pts[2] += 1;
-                    ftm[2] += 1;
-                    fta[2] += 3;
-                    eff[2] -= 1;
-                } else if (linkText.match('LL-2/3')) {
-                    pts[2] += 2;
-                    ftm[2] += 2;
-                    fta[2] += 3;
-                    eff[2] += 1;
-                } else if (linkText.match('LL-3/3')) {
-                    pts[2] += 3;
-                    ftm[2] += 3;
-                    fta[2] += 3;
-                    eff[2] += 3;
-                } else if (linkText.match('BLK')) {
-                    blk[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('AST')) {
-                    ast[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('STL')) {
-                    stl[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('TO')) {
-                    to[2] += 1;
-                    eff[2] -= 1;
-                } else if (linkText.match('ROF')) {
-                    rebOff[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('RDF')) {
-                    rebDef[2] += 1;
-                    eff[2] += 1;
-                } else if (linkText.match('PF')) {
-                    pf[2] += 1;
-                }
-            }
-        });
-
-        // calculate Q4 stats
-        links.forEach(link => {
-            const linkText = link.querySelector('a').textContent;
-            if (linkText.startsWith('Q4')) {
-                if (linkText.match('FGA')) {
-                    fga[3] += 1;
-                    eff[3] -= 1;
-                } else if (linkText.match('FGM')) {
-                    pts[3] += 2;
-                    fga[3] += 1;
-                    fgm[3] += 1;
-                    eff[3] += 2;
-                }
-                else if (linkText.match('3PM')) {
-                    pts[3] += 3;
-                    tpm[3] += 1;
-                    tpa[3] += 1;
-                    eff[3] += 3;
-                } else if (linkText.match('3PA')) {
-                    tpa[3] += 1;
-                    eff[3] -= 1;
-                } else if (linkText.match('LL-0/1')) {
-                    pts[3] += 0;
-                    ftm[3] += 0;
-                    fta[3] += 1;
-                    eff[3] -= 1;
-                } else if (linkText.match('LL-1/1')) {
-                    pts[3] += 1;
-                    ftm[3] += 1;
-                    fta[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('LL-0/2')) {
-                    pts[3] += 0;
-                    ftm[3] += 0;
-                    fta[3] += 2;
-                    eff[3] -= 2;
-                } else if (linkText.match('LL-1/2')) {
-                    pts[3] += 1;
-                    ftm[3] += 1;
-                    fta[3] += 2;
-                    eff[3] += 0;
-                } else if (linkText.match('LL-2/2')) {
-                    pts[3] += 2;
-                    ftm[3] += 2;
-                    fta[3] += 2;
-                    eff[3] += 2;
-                } else if (linkText.match('LL-0/3')) {
-                    pts[3] += 0;
-                    ftm[3] += 0;
-                    fta[3] += 3;
-                    eff[3] -= 3;
-                } else if (linkText.match('LL-1/3')) {
-                    pts[3] += 1;
-                    ftm[3] += 1;
-                    fta[3] += 3;
-                    eff[3] -= 1;
-                } else if (linkText.match('LL-2/3')) {
-                    pts[3] += 2;
-                    ftm[3] += 2;
-                    fta[3] += 3;
-                    eff[3] += 1;
-                } else if (linkText.match('LL-3/3')) {
-                    pts[3] += 3;
-                    ftm[3] += 3;
-                    fta[3] += 3;
-                    eff[3] += 3;
-                } else if (linkText.match('BLK')) {
-                    blk[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('AST')) {
-                    ast[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('STL')) {
-                    stl[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('TO')) {
-                    to[3] += 1;
-                    eff[3] -= 1;
-                } else if (linkText.match('ROF')) {
-                    rebOff[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('RDF')) {
-                    rebDef[3] += 1;
-                    eff[3] += 1;
-                } else if (linkText.match('PF')) {
-                    pf[3] += 1;
-                }
-            }
-        });
-
-        // calculate OT stats
-        links.forEach(link => {
-            const linkText = link.querySelector('a').textContent;
-            if (linkText.startsWith('OT')) {
-                if (linkText.match('FGA')) {
-                    fga[4] += 1;
-                    eff[4] -= 1;
-                } else if (linkText.match('FGM')) {
-                    pts[4] += 2;
-                    fga[4] += 1;
-                    fgm[4] += 1;
-                    eff[4] += 2;
-                }
-                else if (linkText.match('3PM')) {
-                    pts[4] += 3;
-                    tpm[4] += 1;
-                    tpa[4] += 1;
-                    eff[4] += 3;
-                } else if (linkText.match('3PA')) {
-                    tpa[4] += 1;
-                    eff[4] -= 1;
-                } else if (linkText.match('LL-0/1')) {
-                    pts[4] += 0;
-                    ftm[4] += 0;
-                    fta[4] += 1;
-                    eff[4] -= 1;
-                } else if (linkText.match('LL-1/1')) {
-                    pts[4] += 1;
-                    ftm[4] += 1;
-                    fta[4] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('LL-0/2')) {
-                    pts[4] += 0;
-                    ftm[4] += 0;
-                    fta[4] += 2;
-                    eff[4] -= 2;
-                } else if (linkText.match('LL-1/2')) {
-                    pts[4] += 1;
-                    ftm[4] += 1;
-                    fta[4] += 2;
-                    eff[4] += 0;
-                } else if (linkText.match('LL-2/2')) {
-                    pts[4] += 2;
-                    ftm[4] += 2;
-                    fta[4] += 2;
-                    eff[4] += 2;
-                } else if (linkText.match('LL-0/3')) {
-                    pts[4] += 0;
-                    ftm[4] += 0;
-                    fta[4] += 3;
-                    eff[4] -= 3;
-                } else if (linkText.match('LL-1/3')) {
-                    pts[4] += 1;
-                    ftm[4] += 1;
-                    fta[4] += 3;
-                    eff[4] -= 1;
-                } else if (linkText.match('LL-2/3')) {
-                    pts[4] += 2;
-                    ftm[4] += 2;
-                    fta[4] += 3;
-                    eff[4] += 1;
-                } else if (linkText.match('LL-3/3')) {
-                    pts[4] += 3;
-                    ftm[4] += 3;
-                    fta[4] += 3;
-                    eff[4] += 3;
-                } else if (linkText.match('BLK')) {
-                    blk[4] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('AST')) {
-                    ast[4] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('STL')) {
-                    stl[4] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('TO')) {
-                    to[4] += 1;
-                    eff[4] -= 1;
-                } else if (linkText.match('ROF')) {
-                    rebOff[4] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('RDF')) {
-                    rebDef[0] += 1;
-                    eff[4] += 1;
-                } else if (linkText.match('PF')) {
-                    pf[4] += 1;
-                }
-            }
-        });
+        calculateStats(links, quarters);
 
         // functions to show stats per quarter and total
         document.getElementById('q1-btn').addEventListener('click', function () {
