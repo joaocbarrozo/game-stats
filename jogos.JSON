@@ -8,7 +8,7 @@
                   "time": "Centro Olimpico",
                   "adversário": "São José",
                   "categoria": "Sub-13",
-                  "links": [
+                  "links": 
                       [
                           {
                               "url": "https://www.youtube.com/watch?v=wFUlhoGekWs&t=43s",
@@ -183,7 +183,7 @@
                               "descrição": "Q4-FGA-Bandeja esquerda-17:15"
                           }
                       ]
-                  ],
+                  ,
                   "desempenho": {
                       "ofensivo": {
                           "valor": 70.83,

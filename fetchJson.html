@@ -21,17 +21,35 @@
     <h1>JSON Data from GitHub</h1>
     <button onclick="fetchData()">Fetch Data</button>
     <div id="data" class="data"></div>
+    <div>
+        <ol id="list">
+            
+        </ol>
+    </div>
 
     <script>
-        function fetchData() {
-            fetch('https://raw.githubusercontent.com/joaocbarrozo/game-stats/refs/heads/main/jogos.JSON')
-                .then(response => response.json())
-                .then(data => {
-                    const dataDiv = document.getElementById('data');
-                    dataDiv.innerHTML = JSON.stringify(data, null, 2);
-                })
-                .catch(error => console.error('Error fetching the JSON file:', error));
-        }
+function fetchData() {
+    fetch('https://raw.githubusercontent.com/joaocbarrozo/game-stats/refs/heads/main/jogos.JSON')
+        .then(response => response.json())
+        .then(data => {
+            const links = data["jogadores"][0]["Tais"][0]["links"][0];
+            const link2 = data["jogadores"][0]["Tais"][0]["links"][0][1]; 
+            const dataDiv = document.getElementById('data');
+            const orderedList = document.getElementById('list');
+            
+            dataDiv.innerHTML = JSON.stringify(links, null, 2);
+            links.forEach(link => {
+                // Create a new list item element
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="${link["url"]}">${link["descrição"]}</a>`; // Corrected to use innerHTML
+            orderedList.appendChild(listItem);
+            });
+            
+        })
+        .catch(error => console.error('Error fetching the JSON file:', error));
+}
+
+
     </script>
 </body>
 </html>
