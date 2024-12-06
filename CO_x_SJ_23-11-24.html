@@ -352,7 +352,7 @@
                 .then(response => response.json())
                 .then(data => {
                     //Game links
-                    const dataLinks = data["jogadores"][0]["Tais"][0]["links"];
+                    const dataLinks = data["jogadores"][1]["Gabriel"][0]["links"];
                     // performance grades and comments
                     const performance = data["jogadores"][0]["Tais"][0]["desempenho"];
                     // ol element
@@ -492,6 +492,18 @@
                             linkAnchor.classList.add("btn", "btn-outline-warning", "mb-1");
                         } else {
                             linkAnchor.classList.add("btn", "btn-outline-success", "mb-1");
+                        }
+                    });
+
+                    // stylish performance badges
+                    const badges = document.querySelectorAll(".badge");
+                    badges.forEach(badge => {
+                        if (parseInt(badge.innerText) >=75 ){
+                            badge.classList.add("bg-success")
+                        } else if (parseInt(badge.innerText) >=50){
+                            badge.classList.add("bg-warning")
+                        } else {
+                            badge.classList.add("bg-danger")
                         }
                     });
 
