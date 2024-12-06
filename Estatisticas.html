@@ -350,18 +350,17 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="post" class="form">
-                            <label for="player-selection">Jogador</label>
-                            <select name="player-selection" id="player-selection">
+                        <form action="post" class="form form-control">
+                            <label for="player-selection" class="d-block form-label">Jogador</label>
+                            <select name="player-selection" id="player-selection" class="form-select">
                                 <option value="Gabriel">Gabriel</option>
                                 <option value="Tais">Tais</option>
                             </select>
-                            <label for="game-selection">Jogo</label>
-                            <select name="game-selection" id="game-selection">
+                            <label for="game-selection" class="d-block form-label">Jogo</label>
+                            <select name="game-selection" id="game-selection" class="form-select">
 
                             </select>
                         </form>
-
 
                     </div>
                     <div class="modal-footer">
@@ -883,7 +882,6 @@
 
         const btnSelectGame = document.getElementById("btn-select-game");
         btnSelectGame.addEventListener("click", () => fetchData())
-        //fetchData();
     </script>
 </body>
 
