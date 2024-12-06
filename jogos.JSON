@@ -1,7 +1,8 @@
 {
   "jogadores": [
     {
-      "Tais": [
+      "nome":"Tais",
+      "jogos": [
         {
           "data": "23/11/2024",
           "local": "Tupã",
@@ -254,7 +255,8 @@
       ]
     },
     {
-      "Gabriel": [
+      "nome" : "Gabriel",
+      "jogos" : [
         {
           "data": "24/11/2024",
           "local": "Santo André",
