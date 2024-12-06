@@ -32,8 +32,10 @@ function fetchData() {
     fetch('https://raw.githubusercontent.com/joaocbarrozo/game-stats/refs/heads/main/jogos.JSON')
         .then(response => response.json())
         .then(data => {
-            const links = data["jogadores"][0]["Tais"][0]["links"];
-            const desempenho = data["jogadores"][0]["Tais"][0]["desempenho"]["valor"]; 
+            //const links = data["jogadores"][0]["Tais"][0]["links"];
+            const desempenho = data["jogadores"].find(jogador => {
+                console.log(jogador.nome);
+                return jogador.nome === "Tais"}); 
             const dataDiv = document.getElementById('data');
             const orderedList = document.getElementById('list');
             
