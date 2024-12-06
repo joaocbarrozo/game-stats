@@ -546,12 +546,13 @@
                     // stylish performance badges
                     const badges = document.querySelectorAll(".badge");
                     badges.forEach(badge => {
+                        badge.classList.remove("bg-success", "bg-warnung", "bg-danger");
                         if (parseInt(badge.textContent) >= 75) {
-                            badge.classList.add("bg-success")
+                            badge.classList.add("badge", "bg-success")
                         } else if (parseInt(badge.textContent) >= 50) {
-                            badge.classList.add("bg-warning")
+                            badge.classList.add("badge", "bg-warning")
                         } else {
-                            badge.classList.add("bg-danger")
+                            badge.classList.add("badge", "bg-danger")
                         }
                     });
 
