@@ -1,7 +1,7 @@
 {
   "jogadores": [
     {
-      "nome":"Tais",
+      "nome": "Tais",
       "jogos": [
         {
           "data": "23/11/2024",
@@ -259,24 +259,127 @@
           "adversário": "Tupã",
           "categoria": "Sub-13",
           "links": [
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=5s", "descrição": "Q1-POS-Boa ajuda e recuperação-0:05" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=86s", "descrição": "Q1-3PA-45 direito-1:26" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=130s", "descrição": "Q1-3PA-45 direito um passo atrás-2:10" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=145s", "descrição": "Q1-3PA-45 direito-2:25" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=226s", "descrição": "Q1-PF-Falta cometida-3:46" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=296s", "descrição": "Q1-3PA-45 direito-4:56" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=327s", "descrição": "Q1-STL-Roubo de bola-5:27" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=358s", "descrição": "Q1-STL-Bola perdida-5:58" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=364s", "descrição": "Q1-FGA-Bandeja esquerda-6:04" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=383s", "descrição": "Q1-3PA-45 direito-6:23" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=395s", "descrição": "Q1-PF-Falta cometida-6:35" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=438s", "descrição": "Q1-NEG-Falta de atenção na defesa-7:18" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=575s", "descrição": "Q1-TO-Passe interceptado-9:35" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=680s", "descrição": "Q1-FGA-Bandeja direita-11:20" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=742s", "descrição": "Q1-LL-0/2-12:22" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=821s", "descrição": "Q1-LL-0/2-13:41" },
-            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=1019s", "descrição": "Q1-FGM-Bandeja esquerda-16:59" }
-        ],
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=5s",
+              "descrição": "Q1-POS-Boa ajuda e recuperação-0:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=86s",
+              "descrição": "Q1-3PA-45 direito-1:26"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=130s",
+              "descrição": "Q1-3PA-45 direito um passo atrás-2:10"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=145s",
+              "descrição": "Q1-3PA-45 direito-2:25"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=226s",
+              "descrição": "Q1-PF-Falta cometida-3:46"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=296s",
+              "descrição": "Q1-3PA-45 direito-4:56"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=327s",
+              "descrição": "Q1-STL-Roubo de bola-5:27"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=358s",
+              "descrição": "Q1-STL-Bola perdida-5:58"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=364s",
+              "descrição": "Q1-FGA-Bandeja esquerda-6:04"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=383s",
+              "descrição": "Q1-3PA-45 direito-6:23"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=395s",
+              "descrição": "Q1-PF-Falta cometida-6:35"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=438s",
+              "descrição": "Q1-NEG-Falta de atenção na defesa-7:18"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=575s",
+              "descrição": "Q1-TO-Passe interceptado-9:35"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=680s",
+              "descrição": "Q1-FGA-Bandeja direita-11:20"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=742s",
+              "descrição": "Q1-LL-0/2-12:22"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=821s",
+              "descrição": "Q1-LL-0/2-13:41"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=1019s",
+              "descrição": "Q1-FGM-Bandeja esquerda-16:59"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=12s",
+              "descrição": "Q3-3PA-45 direito-0:12"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=44s",
+              "descrição": "Q3-3PA-45 esquerdo-0:44"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=66s",
+              "descrição": "Q3-TO-Passe interceptado-1:06"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=163s",
+              "descrição": "Q3-TO-Bola roubada-2:43"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=247s",
+              "descrição": "Q3-3PA-45 esquerdo-4:07"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=255s",
+              "descrição": "Q3-3PA-45 esquerdo-4:15"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=375s",
+              "descrição": "Q3-TO-Bola roubada-6:15"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=420s",
+              "descrição": "Q3-3PA-Zona morta direita-7:00"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=528s",
+              "descrição": "Q3-FGA-Bandeja direita-8:48"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=557s",
+              "descrição": "Q3-FGA-Bandeja direita-9:17"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=565s",
+              "descrição": "Q3-3PA-45 direito-9:25"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=662s",
+              "descrição": "Q3-3PA-Zona morta direita-11:02"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=YHzHgvcyDaU&t=702s",
+              "descrição": "Q3-LL-1/2-11:42"
+            }
+          ],
           "desempenho": {
             "valor": 73.42,
             "ofensivo": {
@@ -349,8 +452,8 @@
       ]
     },
     {
-      "nome" : "Gabriel",
-      "jogos" : [
+      "nome": "Gabriel",
+      "jogos": [
         {
           "data": "24/11/2024",
           "local": "Santo André",
