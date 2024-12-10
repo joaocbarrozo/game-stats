@@ -250,6 +250,100 @@
               ]
             }
           }
+        },
+        {
+          "data": "22/11/2024",
+          "local": "Tupã",
+          "time": "Centro Olimpico",
+          "adversário": "Tupã",
+          "categoria": "Sub-13",
+          "links": [
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=5s", "descrição": "Q1-POS-Boa ajuda e recuperação-0:05" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=86s", "descrição": "Q1-3PA-45 direito-1:26" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=130s", "descrição": "Q1-3PA-45 direito um passo atrás-2:10" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=145s", "descrição": "Q1-3PA-45 direito-2:25" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=226s", "descrição": "Q1-PF-Falta cometida-3:46" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=296s", "descrição": "Q1-3PA-45 direito-4:56" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=327s", "descrição": "Q1-STL-Roubo de bola-5:27" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=358s", "descrição": "Q1-STL-Bola perdida-5:58" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=364s", "descrição": "Q1-FGA-Bandeja esquerda-6:04" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=383s", "descrição": "Q1-3PA-45 direito-6:23" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=395s", "descrição": "Q1-PF-Falta cometida-6:35" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=438s", "descrição": "Q1-NEG-Falta de atenção na defesa-7:18" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=575s", "descrição": "Q1-TO-Passe interceptado-9:35" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=680s", "descrição": "Q1-FGA-Bandeja direita-11:20" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=742s", "descrição": "Q1-LL-0/2-12:22" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=821s", "descrição": "Q1-LL-0/2-13:41" },
+            { "url": "https://www.youtube.com/watch?v=AmUeZIHI2qo&t=1019s", "descrição": "Q1-FGM-Bandeja esquerda-16:59" }
+        ],
+          "desempenho": {
+            "valor": 73.42,
+            "ofensivo": {
+              "valor": 70.83,
+              "detalhes": [
+                {
+                  "categoria": "Participação",
+                  "nota": 80,
+                  "comentario": "Se comportou bem no ataque, não hesitou em arremessar quando estava desmarcada mesmo após errar os arremessos anteriores, controlou bem o jogo chamando as jogadas e arremessando em boa quantidade."
+                },
+                {
+                  "categoria": "Segurança com a bola",
+                  "nota": 70,
+                  "comentario": "Demonstrou bom controle de bola e segurança, não tendo muitos problemas quando estava sob pressão, apesar do número alto de turnovers, a maioria não resultou em contra ataque ou pontos rápidos para o adversário."
+                },
+                {
+                  "categoria": "Arremessos",
+                  "nota": 60,
+                  "comentario": "A maioria dos arremessos foram livres de marcação e bem posicionados a execução foi o unico problema muitos erros 'foram por muito' incluindo alguns 'air balls'."
+                },
+                {
+                  "categoria": "Passes",
+                  "nota": 65,
+                  "comentario": "Apesar de ter dado apenas uma assistência e ter tido alguns passes interceptados, em alguns momentos encontrou companheiras em ótimas condições para pontuar tanto perto da cesta quanto em bolas de fora."
+                },
+                {
+                  "categoria": "Infiltração",
+                  "nota": 75,
+                  "comentario": "Foi um jogo com poucas oportunidades de infiltração muito por conta da defesa 'fechadinha' de São José, mas conseguiu aproveitar bem as oportunidade que teve principalmente em contra-ataques."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 75,
+                  "comentario": "Buscou sempre sair com velocidade nos contra-ataques, o que causou alguns turnovers, já nas situações normais, conseguiu sair muito bem da pressão tanto por meio de passes como driblando, gerando boas oportunidades de pontuar."
+                }
+              ]
+            },
+            "defensivo": {
+              "valor": 76.00,
+              "detalhes": [
+                {
+                  "categoria": "Dedicação",
+                  "nota": 90,
+                  "comentario": "Marcou com muito intensidade durante praticamente toda a partida, tanto na defesa meia-quadra quanto quadra inteira."
+                },
+                {
+                  "categoria": "Defesa na bola",
+                  "nota": 95,
+                  "comentario": "Foi excelente enquanto estava defendendo a adversária com a bola, colocou muita pressão sobre as adversárias inclusive forçando turnovers."
+                },
+                {
+                  "categoria": "Pick and roll",
+                  "nota": 40,
+                  "comentario": "Teve muitas dificuldades em sair dos picks, comprometeu a defesa todas as vezes que esteve nessa situação demonstarando pouca percepção defensiva e falha na comunicação com as companheiras na hora de realizar a troca."
+                },
+                {
+                  "categoria": "Ajuda defensiva",
+                  "nota": 55,
+                  "comentario": "Quando a bola não está com a sua marcadora ou na sua zona de marcação, tem muitas dificuldades de observar a bola e a sua marcadora ao mesmo tempo e as vezes fica 'assistindo ao jogo'."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 100,
+                  "comentario": "Fez um excelente trabalho no balanço defensivo impedindo muitos dos contra-ataques adversários, sendo sempre a primeira a compor a defesa e sempre contestando arremessos e bandejas sem cometer faltas."
+                }
+              ]
+            }
+          }
         }
       ]
     },
