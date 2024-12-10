@@ -1,7 +1,8 @@
 {
   "jogadores": [
     {
-      "Tais": [
+      "nome":"Tais",
+      "jogos": [
         {
           "data": "23/11/2024",
           "local": "Tupã",
@@ -348,7 +349,8 @@
       ]
     },
     {
-      "Gabriel": [
+      "nome" : "Gabriel",
+      "jogos" : [
         {
           "data": "24/11/2024",
           "local": "Santo André",
@@ -538,69 +540,69 @@
             }
           ],
           "desempenho": {
-            "valor": 75.00,
+            "valor": 69.75,
             "ofensivo": {
-              "valor": 70.83,
+              "valor": 87.50,
               "detalhes": [
                 {
                   "categoria": "Participação",
-                  "nota": 80,
-                  "comentario": "Se comportou bem no ataque, não hesitou em arremessar quando estava desmarcada mesmo após errar os arremessos anteriores, controlou bem o jogo chamando as jogadas e arremessando em boa quantidade."
+                  "nota": 90,
+                  "comentario": "Foi bem agressivo ofensivamente principalmente na criação dos próprios arremessos."
                 },
                 {
                   "categoria": "Segurança com a bola",
-                  "nota": 70,
-                  "comentario": "Demonstrou bom controle de bola e segurança, não tendo muitos problemas quando estava sob pressão, apesar do número alto de turnovers, a maioria não resultou em contra ataque ou pontos rápidos para o adversário."
+                  "nota": 95,
+                  "comentario": "Teve muita segurança com a bola e poucos desperdicios apesar da pressão forte da defesa adversária ."
                 },
                 {
                   "categoria": "Arremessos",
-                  "nota": 60,
-                  "comentario": "A maioria dos arremessos foram livres de marcação e bem posicionados a execução foi o unico problema muitos erros 'foram por muito' incluindo alguns 'air balls'."
+                  "nota": 90,
+                  "comentario": "Boa quantidade de arremessos e no geral a seleção dos arremessos foi ótima apesar de alguns terem sido forçados."
                 },
                 {
                   "categoria": "Passes",
-                  "nota": 65,
-                  "comentario": "Apesar de ter dado apenas uma assistência e ter tido alguns passes interceptados, em alguns momentos encontrou companheiras em ótimas condições para pontuar tanto perto da cesta quanto em bolas de fora."
+                  "nota": 70,
+                  "comentario": "Teve um numero baixo de assistências mas não teve nenhum passe interceptado."
                 },
                 {
                   "categoria": "Infiltração",
-                  "nota": 75,
-                  "comentario": "Foi um jogo com poucas oportunidades de infiltração muito por conta da defesa 'fechadinha' de São José, mas conseguiu aproveitar bem as oportunidade que teve principalmente em contra-ataques."
+                  "nota": 95,
+                  "comentario": "Muito determinado e efetivo invadindo o garrafão geraou boa parte dos pontos dessa forma só faltou caprichar um pouco mais em algumas finalizações."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 75,
-                  "comentario": "Buscou sempre sair com velocidade nos contra-ataques, o que causou alguns turnovers, já nas situações normais, conseguiu sair muito bem da pressão tanto por meio de passes como driblando, gerando boas oportunidades de pontuar."
+                  "nota": 85,
+                  "comentario": "Saiu sempre muito veloz nas transições tanto com a bola como sem ela pra tentar pegar a defesa desarrumada mas foi mais efetivo com a bola nas mãos, quando tentava 'escapar' sem a bola estava sempre bem marcado ou os companheiros nã o encontravam."
                 }
               ]
             },
             "defensivo": {
-              "valor": 76.00,
+              "valor": 52.00,
               "detalhes": [
                 {
                   "categoria": "Dedicação",
-                  "nota": 90,
-                  "comentario": "Marcou com muito intensidade durante praticamente toda a partida, tanto na defesa meia-quadra quanto quadra inteira."
+                  "nota": 30,
+                  "comentario": "Pouca intensidade defensiva se esforçou mais enquanto marcava na quadra de ataque do que na de defesa claramente descansando e buscando oportunidades de pontuar rapidamente."
                 },
                 {
                   "categoria": "Defesa na bola",
-                  "nota": 95,
-                  "comentario": "Foi excelente enquanto estava defendendo a adversária com a bola, colocou muita pressão sobre as adversárias inclusive forçando turnovers."
+                  "nota": 45,
+                  "comentario": "Foi 'batido' facilmente muitas vezes mas conseguiu dificultar pros adversários em alguns momentos."
                 },
                 {
                   "categoria": "Pick and roll",
-                  "nota": 40,
-                  "comentario": "Teve muitas dificuldades em sair dos picks, comprometeu a defesa todas as vezes que esteve nessa situação demonstarando pouca percepção defensiva e falha na comunicação com as companheiras na hora de realizar a troca."
+                  "nota": 60,
+                  "comentario": "Esteve envolvido nessa situação poucas vezes e apesar de ter tido dificuldades não comprometeu tanto."
                 },
                 {
                   "categoria": "Ajuda defensiva",
-                  "nota": 55,
-                  "comentario": "Quando a bola não está com a sua marcadora ou na sua zona de marcação, tem muitas dificuldades de observar a bola e a sua marcadora ao mesmo tempo e as vezes fica 'assistindo ao jogo'."
+                  "nota": 50,
+                  "comentario": "Foi pouco efetivo tanto ajudando quanto na hora de retornar a sua zona ou marcador cedendo infiltações e bolas de 3."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 100,
-                  "comentario": "Fez um excelente trabalho no balanço defensivo impedindo muitos dos contra-ataques adversários, sendo sempre a primeira a compor a defesa e sempre contestando arremessos e bandejas sem cometer faltas."
+                  "nota": 75,
+                  "comentario": "Pressionou bem enquanto os adversários na quadra de defesa deles e quando era o primeiro homem no balanço defensivo tentou proteger o garrafão mas sem muito sucesso."
                 }
               ]
             }
