@@ -464,6 +464,215 @@
               ]
             }
           }
+        },
+        {
+          "data": "25/09/2024",
+          "local": "Centro Olimpico",
+          "time": "Centro Olimpico",
+          "adversário": "Taubaté",
+          "categoria": "Sub-13",
+          "links": [
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=43s",
+              "descrição": "Q1-TO-Volta de quadra-0:43"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=69s",
+              "descrição": "Q1-3PM-Zona morta direita-1:09"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=103s",
+              "descrição": "Q1-STL-Roubo de bola-1:43"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=212s",
+              "descrição": "Q1-3PA-Frente dois passos atrás-3:32"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=245s",
+              "descrição": "Q1-TO-Passe interceptado-4:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=248s",
+              "descrição": "Q1-PF-Falta-4:08"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=283s",
+              "descrição": "Q1-3PA-45 direita um passo atrás-4:43"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=422s",
+              "descrição": "Q1-FGM-Bandeja direita-7:02"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=515s",
+              "descrição": "Q1-3PA-45 direita dois passos atrás-8:35"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=653s",
+              "descrição": "Q1-TO-Bola roubada-10:53"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=747s",
+              "descrição": "Q1-FGA-Bandeja direita-12:27"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=772s",
+              "descrição": "Q1-FGA-Bandeja esquerda-12:52"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=815s",
+              "descrição": "Q1-3PA-Zona morta direita-13:35"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=826s",
+              "descrição": "Q1-3PA-Frente 2 passos atrás-13:46"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=ny371ranA18&t=851s",
+              "descrição": "Q1-FGA-Bandeja direita-14:11"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=72s",
+              "descrição": "Q3-TO-Passe interceptado-1:12"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=286s",
+              "descrição": "Q3-3PA-Frente um passo atrás-4:46"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=417s",
+              "descrição": "Q3-TO-Bola roubada-6:57"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=486s",
+              "descrição": "Q3-3PA-Zona morta esquerda-8:06"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=502s",
+              "descrição": "Q3-AST-Assistência bandeja contra ataque-8:22"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=lpp0vQt3V88&t=676s",
+              "descrição": "Q3-FGA-Perto zona morta esquerda-11:16"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=140s",
+              "descrição": "Q4-3PM-Zona morta esquerda-2:20"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=199s",
+              "descrição": "Q4-FGA-Bandeja direita-3:19"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=245s",
+              "descrição": "Q4-POS-Boa ajuda defensiva-4:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=327s",
+              "descrição": "Q4-FGM-Bandeja direita-5:27"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=365s",
+              "descrição": "Q4-POS-Ótimo controle de bola e excelente passe-6:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=482s",
+              "descrição": "Q4-POS-Ótimo passe-8:02"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=502s",
+              "descrição": "Q4-3PA-45 direito-8:22"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=509s",
+              "descrição": "Q4-3PA-Frente-8:29"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=546s",
+              "descrição": "Q4-FGM-Médio zona morta direita-9:06"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=673s",
+              "descrição": "Q4-3PA-Zona morta direita-11:13"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=753s",
+              "descrição": "Q4-3PM-45 esquerdo-12:33"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=GA_ea5aVoog&t=790s",
+              "descrição": "Q4-3PA-Zona morta esquerda-13:10"
+            }
+          ],
+          "desempenho": {
+            "valor": 68.25,
+            "ofensivo": {
+              "valor": 62.50,
+              "detalhes": [
+                {
+                  "categoria": "Participação",
+                  "nota": 70,
+                  "comentario": "Bom volume no ataque."
+                },
+                {
+                  "categoria": "Segurança com a bola",
+                  "nota": 70,
+                  "comentario": "Demonstrou bom controle de bola e segurança em alguns momentos, teve alguns problemas quando estava sob pressão resultando em turnovers e pontos rápidos pro adversário."
+                },
+                {
+                  "categoria": "Arremessos",
+                  "nota": 50,
+                  "comentario": "Poderia ter selecionado um pouco melhor os arremessos, alguns foram apressados e com muito tempo no relógio."
+                },
+                {
+                  "categoria": "Passes",
+                  "nota": 50,
+                  "comentario": "Não teve nenhuma assistência e também não criou boas oportunidades pras companheiras."
+                },
+                {
+                  "categoria": "Infiltração",
+                  "nota": 65,
+                  "comentario": "Criou algumas oportunidades dentro do garrafão principalmente em contra ataques mas perdeu algumas chances de bater pra dentro ."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 70,
+                  "comentario": "Buscou sempre sair com velocidade nos contra-ataques, tanto com a bola como sem ela mas as melhores chances foram produzidas quando estava com a bola."
+                }
+              ]
+            },
+            "defensivo": {
+              "valor": 74.00,
+              "detalhes": [
+                {
+                  "categoria": "Dedicação",
+                  "nota": 75,
+                  "comentario": "Marcou com boa intensidade durante alguns momentos e 'assistiu' o jogo em outros momentos."
+                },
+                {
+                  "categoria": "Defesa na bola",
+                  "nota": 80,
+                  "comentario": "Foi inconcistente defendendo no perímetro forçando turnovers em alguns momentos e sendo batida facilmente em outros."
+                },
+                {
+                  "categoria": "Pick and roll",
+                  "nota": 60,
+                  "comentario": "Houve poucas situações no jogo mas demonstra dificuldades de sair dos picks e de realizar a troca corretamente."
+                },
+                {
+                  "categoria": "Ajuda defensiva",
+                  "nota": 65,
+                  "comentario": "Foi inconcistente na ajuda também antecipando muito bem em alguns lances e até forçando turnovers mas teve momentos que chegou atrasada."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 90,
+                  "comentario": "Muito atenta e rápida na transição defensiva evitando cestas fáceis."
+                }
+              ]
+            }
+          }
         }
       ]
     },
