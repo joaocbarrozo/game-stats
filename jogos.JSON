@@ -606,69 +606,69 @@
             }
           ],
           "desempenho": {
-            "valor": 68.25,
+            "valor": 78.58,
             "ofensivo": {
-              "valor": 62.50,
+              "valor": 79.16,
               "detalhes": [
                 {
                   "categoria": "Participação",
-                  "nota": 70,
-                  "comentario": "Bom volume no ataque."
+                  "nota": 85,
+                  "comentario": "Boa participação no primeiro quarto, atuação apagada no terceiro e excelente volume de jogo no ultimo quarto.."
                 },
                 {
                   "categoria": "Segurança com a bola",
-                  "nota": 70,
-                  "comentario": "Demonstrou bom controle de bola e segurança em alguns momentos, teve alguns problemas quando estava sob pressão resultando em turnovers e pontos rápidos pro adversário."
+                  "nota": 75,
+                  "comentario": "Teve uma quantidade relativamente baixa de turnovers, mostrou bom controle de bola mas se complicou algumas vezes deixando a dobra se concretizar e contando um pouco com a sorte para evitar bolas perdidas."
                 },
                 {
                   "categoria": "Arremessos",
-                  "nota": 50,
-                  "comentario": "Poderia ter selecionado um pouco melhor os arremessos, alguns foram apressados e com muito tempo no relógio."
+                  "nota": 80,
+                  "comentario": "Arremessos bem selecionados e bem executados principalmente no ultimo quarto."
                 },
                 {
                   "categoria": "Passes",
-                  "nota": 50,
-                  "comentario": "Não teve nenhuma assistência e também não criou boas oportunidades pras companheiras."
+                  "nota": 75,
+                  "comentario": "Distribuiu apenas uma assistência mas mostrou visão de jogo em alguns lances deixando as ccompanheiras em ótimas condições para pontuar."
                 },
                 {
                   "categoria": "Infiltração",
-                  "nota": 65,
-                  "comentario": "Criou algumas oportunidades dentro do garrafão principalmente em contra ataques mas perdeu algumas chances de bater pra dentro ."
+                  "nota": 80,
+                  "comentario": "Mostrou facilidade em encontrar buracos na defesa principalmente quando 'quebrava' a pressão mas deixou passar algumas oportunidades de infiltrar."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 70,
-                  "comentario": "Buscou sempre sair com velocidade nos contra-ataques, tanto com a bola como sem ela mas as melhores chances foram produzidas quando estava com a bola."
+                  "nota": 80,
+                  "comentario": "Saiu com velocidade nos contra-ataques, principalmente com a bola nas mãos."
                 }
               ]
             },
             "defensivo": {
-              "valor": 74.00,
+              "valor": 78.00,
               "detalhes": [
                 {
                   "categoria": "Dedicação",
                   "nota": 75,
-                  "comentario": "Marcou com boa intensidade durante alguns momentos e 'assistiu' o jogo em outros momentos."
+                  "comentario": "Se empenhou bem na defesa mas precisa de mais concistência."
                 },
                 {
                   "categoria": "Defesa na bola",
-                  "nota": 80,
-                  "comentario": "Foi inconcistente defendendo no perímetro forçando turnovers em alguns momentos e sendo batida facilmente em outros."
+                  "nota": 85,
+                  "comentario": "Mostrou que consegue colocar bastante pressão nas adversárias."
                 },
                 {
                   "categoria": "Pick and roll",
-                  "nota": 60,
-                  "comentario": "Houve poucas situações no jogo mas demonstra dificuldades de sair dos picks e de realizar a troca corretamente."
+                  "nota": 70,
+                  "comentario": "Não houve situações desse tipo."
                 },
                 {
                   "categoria": "Ajuda defensiva",
-                  "nota": 65,
-                  "comentario": "Foi inconcistente na ajuda também antecipando muito bem em alguns lances e até forçando turnovers mas teve momentos que chegou atrasada."
+                  "nota": 75,
+                  "comentario": "Precisa ser um pouco mais determinada na ajuda, consegue forçar turnovers quando está atenta mas muitas vezes nem ajuda e nem tira o passe."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 90,
-                  "comentario": "Muito atenta e rápida na transição defensiva evitando cestas fáceis."
+                  "nota": 85,
+                  "comentario": "Sempre uma das primeiras a recompor a defesa."
                 }
               ]
             }
