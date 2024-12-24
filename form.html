@@ -34,18 +34,17 @@
             <input type="text" id="event-link" class="form-control"
                 placeholder="Exemplo: https://www.youtube.com/watch?v=example" required>
         </div>
+        <div class="mb-3">
+            <label for="select-quarter" class="form-label">Quarto:</label>
+            <select id="select-quarter" name="select-quarter">
+                <option value="Q1">Q1</option>
+                <option value="Q2">Q2</option>
+                <option value="Q3">Q3</option>
+                <option value="Q4">Q4</option>
+                <option value="OT">OT</option>
+            </select>
+        </div>
         <form id="event-form" class="form">
-
-            <div class="mb-3">
-                <label for="select-quarter" class="form-label">Quarto:</label>
-                <select id="select-quarter" name="select-quarter">
-                    <option value="Q1">Q1</option>
-                    <option value="Q2">Q2</option>
-                    <option value="Q3">Q3</option>
-                    <option value="Q4">Q4</option>
-                    <option value="OT">OT</option>
-                </select>
-            </div>
             <div class="mb-3">
                 <label for="select-type" class="form-label">Tipo:</label>
                 <select id="select-type" name="select-quarter">
@@ -92,7 +91,6 @@
             let timeText = document.getElementById('event-time').value;
             let time = timeText.split(":");
             time = parseInt(time[0]) * 60 + parseInt(time[1]);
-
 
             link = `${link}&t=${time}s`;
             description = `${quarter}-${type}-${description}-${timeText}`;
@@ -148,7 +146,5 @@
             localStorage.setItem('events', JSON.stringify(events));
         }
     </script>
-
 </body>
-
 </html>
