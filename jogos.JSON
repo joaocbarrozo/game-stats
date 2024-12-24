@@ -680,6 +680,203 @@
       "nome": "Gabriel",
       "jogos": [
         {
+          "data": "30/11/2024",
+          "local": "Mauá",
+          "time": "Tuca",
+          "adversário": "AMAB Girafinhas",
+          "categoria": "Sub-17",
+          "links": [
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=25s",
+              "description": "Q1-TO-Passe pra fora-0:25"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=268s",
+              "description": "Q1-3PA-Frente 5 passos atrás-4:28"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=331s",
+              "description": "Q1-LL-1/2-5:31"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=373s",
+              "description": "Q1-FGA-Floater frente-6:13"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=391s",
+              "description": "Q1-TO-Passe interceptado-6:31"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=412s",
+              "description": "Q1-RDF-Rebote defensivo-6:52"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=415s",
+              "description": "Q1-TO-Bola roubada-6:55"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=787s",
+              "description": "Q1-TO-Bola roubada-13:07"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=aYgmpxa0jYM&t=794s",
+              "description": "Q1-PF-Falta-13:14"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=35KM2u1Z2lM&t=2s",
+              "description": "Q2-3PA-Frente 2 passos atrás-0:02"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=35KM2u1Z2lM&t=65s",
+              "description": "Q2-TO-Bola presa-1:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=35KM2u1Z2lM&t=125s",
+              "description": "Q2-FGM-Bandeja esquerda-2:05"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=35KM2u1Z2lM&t=232s",
+              "description": "Q2-3PA-Zona morta direita-3:52"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=35KM2u1Z2lM&t=837s",
+              "description": "Q2-FGA-Medio zona morta esquerda-13:57"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=47s",
+              "description": "Q3-RDF-Rebote defensivo-0:47"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=112s",
+              "description": "Q3-RDF-Rebote defensivo-1:52"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=880s",
+              "description": "Q3-FGM-Bandeja direita-14:40"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=938s",
+              "description": "Q3-FGM-Bandeja direita-15:38"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=950s",
+              "description": "Q3-NEG-Falta técnica-15:50"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=1122s",
+              "description": "Q3-FGA-Floater frente-18:42"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=AZDK-k5gsCY&t=1181s",
+              "description": "Q3-3PA-Zona morta esquerda-19:41"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=32s",
+              "description": "Q4-3PA-45 direito-0:32"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=60s",
+              "description": "Q4-RDF-Rebote defensivo-1:00"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=253s",
+              "description": "Q4-3PM-45 direito-4:13"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=633s",
+              "description": "Q4-3PA-45 direito 1 passo atrás-10:33"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=695s",
+              "description": "Q4-FGA-Bandeja direita-11:35"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=787s",
+              "description": "Q4-PF-Falta-13:07"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=814s",
+              "description": "Q4-AST-Assistência 3pt-13:34"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=852s",
+              "description": "Q4-PF-Falta-14:12"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qRsTq7ozvA4&t=887s",
+              "description": "Q4-3PA-Frente 3 passos atrás-14:47"
+            }
+          ],
+          "desempenho": {
+            "valor": 69.75,
+            "ofensivo": {
+              "valor": 87.50,
+              "detalhes": [
+                {
+                  "categoria": "Participação",
+                  "nota": 70,
+                  "comentario": "Foi bem agressivo ofensivamente principalmente na criação dos próprios arremessos."
+                },
+                {
+                  "categoria": "Segurança com a bola",
+                  "nota": 95,
+                  "comentario": "Teve muita segurança com a bola e poucos desperdicios apesar da pressão forte da defesa adversária ."
+                },
+                {
+                  "categoria": "Arremessos",
+                  "nota": 90,
+                  "comentario": "Boa quantidade de arremessos e no geral a seleção dos arremessos foi ótima apesar de alguns terem sido forçados."
+                },
+                {
+                  "categoria": "Passes",
+                  "nota": 70,
+                  "comentario": "Teve um numero baixo de assistências mas não teve nenhum passe interceptado."
+                },
+                {
+                  "categoria": "Infiltração",
+                  "nota": 95,
+                  "comentario": "Muito determinado e efetivo invadindo o garrafão geraou boa parte dos pontos dessa forma só faltou caprichar um pouco mais em algumas finalizações."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 85,
+                  "comentario": "Saiu sempre muito veloz nas transições tanto com a bola como sem ela pra tentar pegar a defesa desarrumada mas foi mais efetivo com a bola nas mãos, quando tentava 'escapar' sem a bola estava sempre bem marcado ou os companheiros nã o encontravam."
+                }
+              ]
+            },
+            "defensivo": {
+              "valor": 52.00,
+              "detalhes": [
+                {
+                  "categoria": "Dedicação",
+                  "nota": 30,
+                  "comentario": "Pouca intensidade defensiva se esforçou mais enquanto marcava na quadra de ataque do que na de defesa claramente descansando e buscando oportunidades de pontuar rapidamente."
+                },
+                {
+                  "categoria": "Defesa na bola",
+                  "nota": 45,
+                  "comentario": "Foi 'batido' facilmente muitas vezes mas conseguiu dificultar pros adversários em alguns momentos."
+                },
+                {
+                  "categoria": "Pick and roll",
+                  "nota": 60,
+                  "comentario": "Esteve envolvido nessa situação poucas vezes e apesar de ter tido dificuldades não comprometeu tanto."
+                },
+                {
+                  "categoria": "Ajuda defensiva",
+                  "nota": 50,
+                  "comentario": "Foi pouco efetivo tanto ajudando quanto na hora de retornar a sua zona ou marcador cedendo infiltações e bolas de 3."
+                },
+                {
+                  "categoria": "Transição",
+                  "nota": 75,
+                  "comentario": "Pressionou bem enquanto os adversários na quadra de defesa deles e quando era o primeiro homem no balanço defensivo tentou proteger o garrafão mas sem muito sucesso."
+                }
+              ]
+            }
+          }
+        },
+        {
           "data": "24/11/2024",
           "local": "Santo André",
           "time": "Tuca",
