@@ -808,69 +808,69 @@
             }
           ],
           "desempenho": {
-            "valor": 69.75,
+            "valor": 68.50,
             "ofensivo": {
-              "valor": 87.50,
+              "valor": 75.00,
               "detalhes": [
                 {
                   "categoria": "Participação",
                   "nota": 70,
-                  "comentario": "Foi bem agressivo ofensivamente principalmente na criação dos próprios arremessos."
+                  "comentario": "Participação timida poderia ter mais volume."
                 },
                 {
                   "categoria": "Segurança com a bola",
-                  "nota": 95,
-                  "comentario": "Teve muita segurança com a bola e poucos desperdicios apesar da pressão forte da defesa adversária ."
+                  "nota": 85,
+                  "comentario": "Não ficou tanto tempo com bola mas foi seguro nos momentos que esteve com a bola."
                 },
                 {
                   "categoria": "Arremessos",
-                  "nota": 90,
-                  "comentario": "Boa quantidade de arremessos e no geral a seleção dos arremessos foi ótima apesar de alguns terem sido forçados."
+                  "nota": 70,
+                  "comentario": "Poderia ter arremessado um pouco mais e selecionar melhor os arremessos também."
                 },
                 {
                   "categoria": "Passes",
                   "nota": 70,
-                  "comentario": "Teve um numero baixo de assistências mas não teve nenhum passe interceptado."
+                  "comentario": "Não deu muitos turnovers de passe mas também não criou oportunidades para os companheiros."
                 },
                 {
                   "categoria": "Infiltração",
-                  "nota": 95,
-                  "comentario": "Muito determinado e efetivo invadindo o garrafão geraou boa parte dos pontos dessa forma só faltou caprichar um pouco mais em algumas finalizações."
+                  "nota": 75,
+                  "comentario": "Pouco agressivo nas infiltrações mas aproveitou bem as oportunidaes nos contra-ataques."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 85,
-                  "comentario": "Saiu sempre muito veloz nas transições tanto com a bola como sem ela pra tentar pegar a defesa desarrumada mas foi mais efetivo com a bola nas mãos, quando tentava 'escapar' sem a bola estava sempre bem marcado ou os companheiros nã o encontravam."
+                  "nota": 80,
+                  "comentario": "Procurou sair rápido nas transições principalmente sem a bola."
                 }
               ]
             },
             "defensivo": {
-              "valor": 52.00,
+              "valor": 62.00,
               "detalhes": [
                 {
                   "categoria": "Dedicação",
-                  "nota": 30,
-                  "comentario": "Pouca intensidade defensiva se esforçou mais enquanto marcava na quadra de ataque do que na de defesa claramente descansando e buscando oportunidades de pontuar rapidamente."
+                  "nota": 60,
+                  "comentario": "Mostrou intensidade em alguns momentos mas foi muito inconscistente."
                 },
                 {
                   "categoria": "Defesa na bola",
-                  "nota": 45,
-                  "comentario": "Foi 'batido' facilmente muitas vezes mas conseguiu dificultar pros adversários em alguns momentos."
+                  "nota": 55,
+                  "comentario": "Foi 'batido' facilmente alguma vezes mas conseguiu dificultar pros adversários em alguns momentos."
                 },
                 {
                   "categoria": "Pick and roll",
                   "nota": 60,
-                  "comentario": "Esteve envolvido nessa situação poucas vezes e apesar de ter tido dificuldades não comprometeu tanto."
+                  "comentario": "Pouco agressivo nos picks mas não comprometeu a defesa."
                 },
                 {
                   "categoria": "Ajuda defensiva",
-                  "nota": 50,
-                  "comentario": "Foi pouco efetivo tanto ajudando quanto na hora de retornar a sua zona ou marcador cedendo infiltações e bolas de 3."
+                  "nota": 65,
+                  "comentario": "Cobriu bem sua zona na defesa ajudando e retornando, mas poderia ser um pouco mais agressivo e forçar alguns turnovers."
                 },
                 {
                   "categoria": "Transição",
-                  "nota": 75,
-                  "comentario": "Pressionou bem enquanto os adversários na quadra de defesa deles e quando era o primeiro homem no balanço defensivo tentou proteger o garrafão mas sem muito sucesso."
+                  "nota": 70,
+                  "comentario": "Tentou pressionar os adversários na quadra de defesa deles mas sem muito sucesso."
                 }
               ]
             }
